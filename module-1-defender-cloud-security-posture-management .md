@@ -61,27 +61,37 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 7.	Remediate the recommendations to resolve the attack path 
 8.	Explore the rest of the Attack paths found in your Environment and remidiate
 
-## Exercise 4: Build query with Cloud Security Explorer
-1.	Open **Azure Portal** and navigate to **Microsoft Defender for Cloud** blade.
-2.	From Defender for Cloud's menu, open the **Cloud Security Explorer(preview)** page
+## Exercise 3: Build query with Cloud Security Explorer
 
- ![image](https://user-images.githubusercontent.com/102209701/215828929-98a0e9fe-1f0e-4ac8-97f5-4bed96d0d174.png)
+1.	From **Defender for Cloud** menu, open the **Cloud Security Explorer** page.
 
-3.	Select a predefined query Template **“Internet exposed VMs with high severity vulnerabilities”** and click on **Search**
-4.	You will find the list of VMs with high severity Vulnerabilities.
-5.	Select a predefined query Template **“Internet exposed SQL servers with managed identity”** and click on **Search**
-6.	You will find the list of SQL servers with managed identity.
-7.	You can also explore and build your own queries using query builder as shown below: In the dropdown select Compute -> Virtual machines -> Azure Virtual Machines
+    ![](images/m1-img6.png)
+    
+    
+2.	Select a predefined query Template **“Internet exposed VMs with high severity vulnerabilities” (1)** and click on **Search (2)**.
 
-![image](https://user-images.githubusercontent.com/102209701/230957007-478bf8c3-eb3e-4c04-908b-514710d30967.png)
+    ![](images/m1-img7.png)
 
- Click on + and under select condition, select Security -> vulnerable to remote code execution.
+3.	You will find the list of VMs with high severity Vulnerabilities.
 
- ![image](https://user-images.githubusercontent.com/102209701/230956384-cee04cd8-8a49-4345-a9a4-4b0e8e619ca9.png)
+4.	Select a predefined query Template **“Internet exposed SQL servers with managed identity”** and click on **Search**.
 
-8.	Explore your Environment for Virtual Machines with a specific vulnerability 
+    ![](images/m1-img8.png)
 
- ![image](https://user-images.githubusercontent.com/102209701/230958117-60a425b1-ded4-443c-a11c-001fc3f51b17.png)
+5.	You will find the list of SQL servers with managed identity.
+
+
+6.	You can also explore and build your own queries using query builder, from the dropdown select **Compute (1)** -> **Virtual machines (2)** -> **Azure Virtual Machines (3)** then click **Done (4)**.
+
+    ![](images/m1-img9.png)
+
+   - Click on **+ (1)** and under select condition, select **Security (2)** -> **vulnerable to remote code execution (3)**.
+
+     ![](images/m1-img10.png)
+
+7.	Explore your Environment for Virtual Machines with a specific vulnerability. Click on **Vulnerabilities (1)** and select **By CVE ID (2)**.
+
+     ![](images/m1-img11.png)
  
  Search for Virtual Machines that has a specific Vulnerability
  

@@ -21,7 +21,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
    >**Note:** To gain access to the capabilities provided by Defender CSPM, you'll need to <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-enhanced-security">enable the Defender Cloud Security Posture Management (CSPM) plan </a> on your subscription
 
-1.	In **Azure Portal**, for **Microsoft Defender for Cloud (1)** and then click on it from the search results**(2)**. 
+1.	In **Azure Portal**, for **Microsoft Defender for Cloud (1)** and then click on it from the search results **(2)**. 
 
     ![](images/m1-img1.png)
 
@@ -33,16 +33,21 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
     ![](images/m1-img3.png)
 
-4.	Turn **ON** the **Agentless scanning for machines (preview)** and click **continue**.
+4.	Turn **ON (1)** the **Agentless scanning for machines (preview)** and click **Continue (2)**.
 
+    ![](images/m1-img4.png)
 
-8.	Click on **Save** to save the changes 
-Agentless scanning for VMs provides vulnerability assessment and software inventory in 24 hours. Leave the setup and comeback after 24 hours.
- 
+5.	Click on **Save** to save the changes. 
 
-## Exercise 3: Explore Attack Paths in your Environment
-1.	Open **Azure Portal** and navigate to **Microsoft Defender for Cloud** blade.
-2.	From Defender for Cloud's menu, open the **Recommendations** page
+   >**Note:** Agentless scanning for VMs provides vulnerability assessment and software inventory in 24 hours. Leave the setup and comeback after 24 hours.
+    
+    
+   ![](images/m1-img5.png)
+
+## Exercise 2: Explore Attack Paths in your Environment
+
+1.	From **Defender for Cloud** menu, open the **Recommendations** page.
+
 3.	You will find Attack path tab as below:
 
  ![image](https://user-images.githubusercontent.com/102209701/215828282-358965da-9a0f-4467-846a-2572cf6d8cb8.png)

@@ -76,7 +76,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
    docker pull vulnerables/web-dvwa
    ```
 
-   ![ACR login](Images/docker-pull.png)
+   ![ACR login](Images/docker-pull1.png)
 
 7. Check the image on your local repository by running the command below:
 
@@ -84,30 +84,32 @@ Now you will use Docker to download a vulnerable image from it and push it into 
    docker images vulnerables/web-dvwa
    ```
 
-   ![Docker images](../Images/5dockerimages.png?raw=true)
+   ![Docker images](Images/docker-pull2.png)
 
-8. Create an alias of the image by runnig the following command (replace *secteach365* in following instructions with the name of your server that you copied above): 
-
-   ```
-   docker tag vulnerables/web-dvwa secteach365.azurecr.io/vulnerables/web-dvwa
-   ```
-
-9. Check again the image on your local repository by running the command below: 
+8. Create an alias of the image by runnig the following command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command:
 
    ```
-   docker images secteach365.azurecr.io/vulnerables/web-dvwa
+   docker tag vulnerables/web-dvwa NameOfServer.azurecr.io/vulnerables/web-dvwa
+   ```
+   
+   ![Docker images](Images/docker-pull3.png)
+
+9. Check again the image on your local repository by running the command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command:
+
+   ```
+   docker images NameOfServer.azurecr.io/vulnerables/web-dvwa
    ```
 
-   ![Docker local repository](Images/6dockerlocalrepo.png)
+   ![Docker images](Images/docker-pull4.png)
 
 
-10. Run docker push to upload the new image to the azure repository and generate image scan (it can take some time), using the command below:
+10. Run docker push to upload the new image to the azure repository and generate image scan (it can take some time), using the below command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command: :
 
     ```
-    docker push secteach365.azurecr.io/vulnerables/web-dvwa
+    docker push NameOfServer.azurecr.io/vulnerables/web-dvwa
     ```
 
-    ![Docker push](Images/7dockerpush.png)
+    ![Docker images](Images/docker-pull5.png)
 
 11. Then go to the Azure portal and find the Container registry you created.
 

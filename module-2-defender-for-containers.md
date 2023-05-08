@@ -119,20 +119,22 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 
 Once a vulnerable image has been pushed to the Azure Container Registry registry, then Microsoft Defender for Containers will start scanning the image for vulnerabilities, by using Qualys. You will now look into the recommendation in Microsoft Defender for Cloud for this. 
  
- 1. Go to **Microsoft Defender for Cloud** in the **Azure Portal**.
- 2. Go to the **Recommendations** tab in Defender for Cloud.
- 3. In the **Resource type** filter, have it equal **Container registries**. <br />
+1. In the Azure Portal, searh for Microsoft Defender **(1)** in the search box and then select **Microsoft Defender for Cloud** **(2)**.
 
- ![Recommendation for vulnerabilities in ACR](../Images/9recommendation.png?raw=true)
- 4. Click on the recommendation **Container registry images should have vulnerability findings resolved** to get more details about it. <br />
- ![Recommendation for vulnerabilities in ACR More details](../Images/10recommendationmoreinfo.png?raw=true)
- <br />
- 5. Look around at what's available in the recommendation. Take note of the Remediation Steps.
-<br />
-  ![Remediation Steps](../Images/remsteps.png?raw=true)
-  <br />
- 6. Select the vulnerability **Container registry images should have vulnerability findings resolved** to get more details about the patch available for it and how to remediate it.
- <br />
- ![Debian](../Images/11debian.png?raw=true)
+    ![Microsoft Defender](images/m2-ex3-step1.png)
+   
+2. From the **Microsoft Defender for Cloud** pane, select **Recommendations** from left-menu under General.
+
+    ![Microsoft Defender](images/m2-ex3-step2.png)
  
+3. Now under Secure score recommendations pane, set the **Resource type** filter to have it equal to **Container registries** **(1)** and then expand the **Remediate vulnerabilities** **(2)**. Click on the recommendation **Container registry images should have vulnerability findings resolved** **(3)** to get more details about it.  
+   ![Recommendation for vulnerabilities in ACR](images/m2-ex3-step3.png)
 
+4. Look around at what's available in the recommendation. Take a note of the Remediation Steps.
+
+   ![Remediation Steps](images/m2-ex3-step4.png)
+  
+5. Select the vulnerability **Container registry images should have vulnerability findings resolved** to get more details about the patch available for it and how to remediate it.
+
+   ![Debian](images/m2-ex3-step5.png)
+ 

@@ -7,26 +7,29 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
 ### Exercise 1: Configuring Azure ADO Connector
 
-1.	Login to your Azure Portal and open Defender for Cloud dashboard
-2.	In the left navigation pane, click **Environment settings** option
-3.	Click the **Add environment** button and click **Azure DevOps (preview)** option. The **Create Azure DevOps connection** page appears as shown the sample below.
+1. In **Azure Portal**, for **Microsoft Defender for Cloud (1)** and then click on it from the search results **(2)**. 
 
-![Azure ADO Connector](../Images/M14_Fig1.PNG?raw=true)
+    ![](images/m1-img1.png)
 
-4.	Type the name for the connector, select the subscription, select the Resource Group, which can be the same you used in this lab and the region. 
-11.	Click **Next:select plans >** button to continue.
-12.	In the next page leave the default selection with **DevOps** selected and click **Next: Authorize connection >** button to continue. The following page appears:
+2. From **Defender for Cloud** menu, click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (preview) (3)** option. 
 
-![Azure ADO Connector - Authorize](../Images/M14_Fig2.PNG?raw=true)
+    ![](images/m3-img1.png)
 
+3. Enter the **Name** for the connector `CNAPP-Devops` **(1)**, select your **Subscription (2)**, select **asclab (3)** resource group, select any **Region (3)**. Select **Next : Select plans > (5)**.
 
-13.	Click **Authorize** button. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask your permission to authorize. Scroll down the popped up window screen and click the **Accept** button as shown in the sample below:
+    ![](images/m3-img2.png)
 
-![Azure ADO Connector - Accept](../Images/M14_Fig3.PNG?raw=true)
+4. In the next page leave the default selection with **DevOps** selected and click **Next: Authorize connection >** button to continue. 
 
+    ![](images/m3-img3.png)
 
-> **Note** When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
+5. Click **Authorize** button. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask your permission to authorize. Scroll down the popped up window screen and click the **Accept** button as shown in the sample below:
 
+    ![](images/m3-img4.png)
+
+    ![](images/m3-img5.png)
+
+> **Note**: When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
 
 14.	After the authorization is complete, you will need to select your Azure ADO organization and projects as shown in the sample below:
 

@@ -7,18 +7,37 @@ This exercise guides you on how to validate and use Defender for Containers.
 
 First you need to install Docker Desktop so that we can oush a vulnerable image to our existing Azure Container registry registy.
 
-1.	Navigate to [Docker](https://www.docker.com/products/docker-desktop)  
-2.  Download and install Docker, Check the system requirements, [Docker Requirements](https://docs.docker.com/get-docker/)
-3.  After the installation, open PowerShell on your computer
-4. Verify your docker version by executing in PowerShell 
-```
-    docker version​
-```
+1. Navigate to the below URL to download the Docker and click on **Download Docker Desktop for Windows**.
 
-You may see an output like the one below:
+   ```
+   https://www.docker.com/products/docker-desktop
+   ```
+    
+   ![Download Docker](Images/download-docker.png)
+    
+2. Once downloading is completed, open **File Explorer** from the LabVM and click on **Downloads** **(1)**. Then double-click on **Docker Desktop Installer** **(2)** to install Docker.
 
+   ![Install Docker](Images/install-docker.png)
 
-![Docker Version in Powershell](../Images/1dockerversion.png?raw=true)
+3. In the Configuration tab to add shortcut to desktop, click on **Ok**.
+
+4. Installation will take around 5 mins to complete. Once the installtion succeeded, click on **Close and restart**. Your LabVM will be restarting to complete docker installation.
+
+   ![Install Docker](Images/docker-close-restart.png)
+
+5. Once the LabVM is restarted. Search for PowerShell in Search bar and select **Windows PowerShell**.
+
+   ![Open Powershell](Images/open-powershell.png)
+
+6. Verify your docker version by executing in PowerShell 
+
+   ```
+   docker version
+   ```
+
+   You may see an output like the one below:
+
+   ![Docker Version in Powershell](../Images/1dockerversion.png?raw=true)
 
 
 ### Exercise 2: Download vulnerable image from Docker Hub into the Container Registry

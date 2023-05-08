@@ -5,7 +5,7 @@ This exercise guides you on how to validate and use Defender for Containers.
 
 ### Exercise 1: Install Docker Desktop
 
-First you need to install Docker Desktop so that we can oush a vulnerable image to our existing Azure Container registry registy.
+First you need to install Docker Desktop so that we can oush a vulnerable image to our existing Azure Container registry.
 
 1. Navigate to the below URL to download the Docker and click on **Download Docker Desktop for Windows**.
 
@@ -42,11 +42,11 @@ First you need to install Docker Desktop so that we can oush a vulnerable image 
 
 ### Exercise 2: Download vulnerable image from Docker Hub into the Container Registry
 
-Now you will use Docker to download a vulnerable image from it and push it into the Container Registry you created using the ARM template in Lab 1.
+Now you will use Docker to download a vulnerable image from it and push it into our existing Azure Container registry.
 
 1. Navigate to the Azure Portal, search for **container** **(1)** in the search box and select **Container registries** **(2)**.
 
-   ![Container registry in Azure](images/search-cr.png)
+   ![Container registry in Azure](images/serach-cr.png)
 
 2. Open the Container Registry named **<inject key="Container registry" enableCopy="true"/>**.
 
@@ -58,9 +58,9 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 
 4.	Switch back to PowerShell, you will also need to login to your Azure subscription via **az login**. Enter the following **Email/Username** and **Password** in the browser and click on **Sign in**:
 
-   * Email/Username: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
+      * Email/Username: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
 
-   * Password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
+      * Password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
 
 5. Make sure to update **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command.
    

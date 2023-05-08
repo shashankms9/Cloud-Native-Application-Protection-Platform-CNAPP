@@ -115,33 +115,33 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
  
 ## Exercise 4: Assign Governance Rule
 
-1.	From **Defender for Cloud** menu, click on **Environment Settings (1)** page and select your subscription **(2)**.
+1. From **Defender for Cloud** menu, click on **Environment Settings (1)** page and select your subscription **(2)**.
 
     ![](images/m1-img2.png)
 
-4.	Under **Policy settings** Select **Governance Rules (1)** and click on **Enter the new experience (2)**.
+2. Under **Policy settings** Select **Governance Rules (1)** and click on **Enter the new experience (2)**.
 
     ![](images/m1-img19.png)
 
-5. Click on **+ Create governance rule**.
+3. Click on **+ Create governance rule**.
 
     ![](images/m1-img20.png)
 
-6.	Enter **Rule name** as `CNAPP-Rule` **(1)**, select **Scope** at subscription level **(2)** and **Priority** `100` **(3)**. Click **Next (4)**.
+4. Enter **Rule name** as `CNAPP-Rule` **(1)**, select **Scope** at subscription level **(2)** and **Priority** `100` **(3)**. Click **Next (4)**.
 
     ![](images/m1-img21.png)
     
-7.	Under **conditions** provide the below details and click **Create (5)**
+5. Under **conditions** provide the below details and click **Create (5)**
 	
-	  - **By severity**: `High` **(1)**
-	  - **Owner**: `By email address` **(2)**
+   - **By severity**: `High` **(1)**
+   - **Owner**: `By email address` **(2)**
    - **Email address**: <inject key="AzureAdUserEmail"></inject> **(3)**
    - **Remediation timeframe**: `90 days` **(4)**
 
     ![](images/m1-img22.png)
 
 
-8.	Click on **Governance report** to view the status of tasks **Complete, Ontime and Unassign**
+6. Click on **Governance report** to view the status of tasks **Complete, Ontime and Unassign**
 
     ![](images/m1-img23.png)
     

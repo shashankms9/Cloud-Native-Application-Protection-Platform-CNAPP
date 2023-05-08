@@ -37,15 +37,19 @@ First you need to install Docker Desktop so that we can oush a vulnerable image 
 
    You may see an output like the one below:
 
-   ![Docker Version in Powershell](../Images/1dockerversion.png?raw=true)
+   ![Docker Version in Powershell](Images/docker-version.png)
 
 
 ### Exercise 2: Download vulnerable image from Docker Hub into the Container Registry
 
 Now you will use Docker to download a vulnerable image from it and push it into the Container Registry you created using the ARM template in Lab 1.
 
+1. Navigate to the Azure Portal, search for **container** **(1)** in the search box and select **Container registries** **(2)**.
 
-1. Go to the Azure Portal and open the Container Registry (named "asclabcr####") that you created through the ARM template in Lab 1.
+   ![Container registry in Azure](Images/search-cr.png)
+
+2. Open the Container Registry named 
+
 2. In the Overview of it, then please copy the Login server name only. 
 ![ACR server name](../Images/2acrserver.png?raw=true)
 

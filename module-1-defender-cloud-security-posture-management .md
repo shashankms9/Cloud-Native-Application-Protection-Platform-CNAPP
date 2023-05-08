@@ -40,26 +40,27 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 5.	Click on **Save** to save the changes. 
 
    >**Note:** Agentless scanning for VMs provides vulnerability assessment and software inventory in 24 hours. Leave the setup and comeback after 24 hours.
-    
-    
-   ![](images/m1-img5.png)
+
+
+ ![](images/m1-img5.png)
 
 ## Exercise 2: Explore Attack Paths in your Environment
 
-1.	From **Defender for Cloud** menu, open the **Recommendations** page.
+1.	From **Defender for Cloud** menu, open the **Recommendations (1)** page.	You will find Attack path tab as below, click on **Attack path (2)**. You will find the Attack Paths in your Environment. 
 
-3.	You will find Attack path tab as below:
+     ![](images/m1-img13.1.png)
 
- ![image](https://user-images.githubusercontent.com/102209701/215828282-358965da-9a0f-4467-846a-2572cf6d8cb8.png)
+2.	Click on **Attack path**. You will find the Attack Paths in your Environment. 
 
-4.	Click on **Attack path**. You will find the Attack Paths in your Environment. 
-5.	Click on **“Internet exposed VM has High severity vulnerabilities and read permission to key vault”**
+3.	Click on **“Internet exposed VM has High severity vulnerabilities and read permission to key vault”**
 
-![image](https://user-images.githubusercontent.com/102209701/215828721-bad6c2ba-a3dc-4984-91b9-f8b15dab6ad4.png)
+     ![](images/m1-img14.png)
  
-6.	You can observe the Attack path and the resources involved in the attack path.
-7.	Remediate the recommendations to resolve the attack path 
-8.	Explore the rest of the Attack paths found in your Environment and remidiate
+4.	You can observe the Attack path and the resources involved in the attack path.
+
+5.	Remediate the recommendations to resolve the attack path 
+
+6.	Explore the rest of the Attack paths found in your Environment and remidiate
 
 ## Exercise 3: Build query with Cloud Security Explorer
 
@@ -85,7 +86,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
     ![](images/m1-img9.png)
 
-   - Click on **+ (1)** and under select condition, select **Security (2)** -> **vulnerable to remote code execution (3)**.
+    - Click on **+ (1)** and under select condition, select **Security (2)** -> **vulnerable to remote code execution (3)**.
 
      ![](images/m1-img10.png)
 
@@ -93,36 +94,55 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
      ![](images/m1-img11.png)
  
- Search for Virtual Machines that has a specific Vulnerability
+    - Search for Virtual Machines that has a specific Vulnerability
  
- ![image](https://user-images.githubusercontent.com/102209701/230958614-cdc86d27-a4a9-4622-a137-f695af2cb37a.png)
+     ![](images/m1-img15.png)
+
+8.	Explore your Environment for Storage Accounts exposed to the Internet. From the drop-down click on **Data (1)** then select **Object storage (2)** and choose **Azure storage accounts (3)** from the list and click **Done (4)**.
+
+     ![](images/m1-img16.png)
+
+    - Click on **+ (1)** next to **Azure storage accounts**, then from the **Select condition** drop-down menu click on **Netowrking (2)** and select **Exposed to the internet (3)** and click **Search** . 
+
+     ![](images/m1-img17.png)
 
 
-9.	Explore your Environment for Storage Accounts exposed to the Internet
+10.	Explore your Environment for Storage Accounts with a Sensitive Data. Change the condition to **Data (1)** and click on **Contains sensitive data (2)**.
 
- ![image](https://user-images.githubusercontent.com/102209701/230959026-54412825-60ce-4b53-957f-21d5d17afd53.png)
-
-![image](https://user-images.githubusercontent.com/102209701/230959308-d2256f43-1413-4c6d-8d4a-381f706f903d.png)
-
-
-10.	Explore your Environment for Storage Accounts with a Sensitive Data 
-
-![image](https://user-images.githubusercontent.com/102209701/230960239-65feb795-4ab7-47e1-8f0e-fff3e8ef2085.png)
+     ![](images/m1-img18.png)
 
 
  
-## Exercise 5: Assign Governance Rule
+## Exercise 4: Assign Governance Rule
 
-1.	Open **Azure Portal** and navigate to **Microsoft Defender for Cloud** blade.
-2.	From Defender for Cloud's menu, open the **Environment Settings** page and select the relevant subscription.
-3.	Under **settings** Select **Governance Rules(Preview)**
-4.	Click on **+Create governance rule**
-5.	Give a **rule name**, select **scope** at subscription level, **priority** 100
-6.	Under **conditions**, select **By severity -> High**, **Owner -> By email address**, specify the email address of the workload owner to receive notification email, **Remediation timeframe -> 90 days**
-7.	**Notify Owners weekly about open and overdue tasks** and click **Save**.
+1.	From **Defender for Cloud** menu, click on **Environment Settings (1)** page and select your subscription **(2)**.
 
- ![image](https://user-images.githubusercontent.com/102209701/215829686-cd5fc20c-32be-4822-be5f-04e5f85563c5.png)
+    ![](images/m1-img2.png)
 
-8.	Click on **Governance report** to view the status of tasks **Complete, Overdue, Ontime, Unassign**
+4.	Under **Policy settings** Select **Governance Rules (1)** and click on **Enter the new experience (2)**.
 
- ![image](https://user-images.githubusercontent.com/102209701/215830577-947675fb-2f05-44a0-9482-fbd58a86d360.png)
+    ![](images/m1-img19.png)
+
+5. Click on **+ Create governance rule**.
+
+    ![](images/m1-img20.png)
+
+6.	Enter **Rule name** as `CNAPP-Rule` **(1)**, select **Scope** at subscription level **(2)** and **Priority** `100` **(3)**. Click **Next (4)**.
+
+    ![](images/m1-img21.png)
+    
+7.	Under **conditions** provide the below details and click **Create (5)**
+	
+	  - **By severity**: `High` **(1)**
+	  - **Owner**: `By email address` **(2)**
+   - **Email address**: <inject key="AzureAdUserEmail"></inject> **(3)**
+   - **Remediation timeframe**: `90 days` **(4)**
+
+    ![](images/m1-img22.png)
+
+
+8.	Click on **Governance report** to view the status of tasks **Complete, Ontime and Unassign**
+
+    ![](images/m1-img23.png)
+    
+    ![](images/m1-img24.png)

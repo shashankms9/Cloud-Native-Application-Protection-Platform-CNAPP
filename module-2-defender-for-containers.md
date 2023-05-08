@@ -13,21 +13,21 @@ First you need to install Docker Desktop so that we can oush a vulnerable image 
    https://www.docker.com/products/docker-desktop
    ```
     
-   ![Download Docker](Images/download-docker.png)
+   ![Download Docker](images/download-docker.png)
     
 2. Once downloading is completed, open **File Explorer** from the LabVM and click on **Downloads** **(1)**. Then double-click on **Docker Desktop Installer** **(2)** to install Docker.
 
-   ![Install Docker](Images/install-docker.png)
+   ![Install Docker](images/install-docker.png)
 
 3. In the Configuration tab to add shortcut to desktop, click on **Ok**.
 
 4. Installation will take around 5 mins to complete. Once the installtion succeeded, click on **Close and restart**. Your LabVM will be restarting to complete docker installation.
 
-   ![Install Docker](Images/docker-close-restart.png)
+   ![Install Docker](images/docker-close-restart.png)
 
 5. Once the LabVM is restarted. Search for PowerShell in Search bar and select **Windows PowerShell**.
 
-   ![Open Powershell](Images/open-powershell.png)
+   ![Open Powershell](images/open-powershell.png)
 
 6. Verify your docker version by executing in PowerShell 
 
@@ -37,7 +37,7 @@ First you need to install Docker Desktop so that we can oush a vulnerable image 
 
    You may see an output like the one below:
 
-   ![Docker Version in Powershell](Images/docker-version.png)
+   ![Docker Version in Powershell](images/docker-version.png)
 
 
 ### Exercise 2: Download vulnerable image from Docker Hub into the Container Registry
@@ -46,15 +46,15 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 
 1. Navigate to the Azure Portal, search for **container** **(1)** in the search box and select **Container registries** **(2)**.
 
-   ![Container registry in Azure](Images/search-cr.png)
+   ![Container registry in Azure](images/search-cr.png)
 
 2. Open the Container Registry named **<inject key="Container registry" enableCopy="true"/>**.
 
-   ![Container registry open](Images/select-cr.png)
+   ![Container registry open](images/select-cr.png)
 
 3. In the Overview of it, verify the Login server name only. 
 
-   ![ACR server name](Images/copy-crname.png)
+   ![ACR server name](images/copy-crname.png)
 
 4.	Switch back to PowerShell, you will also need to login to your Azure subscription via **az login**. Enter the following **Email/Username** and **Password** in the browser and click on **Sign in**:
 
@@ -68,7 +68,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
    az acr login --name NameOfServer
    ```
  
-   ![ACR login](Images/acr-login.png)
+   ![ACR login](images/acr-login.png)
 
 6. Download vulnerable image from docker hub, by running the command below in Powershell:
 
@@ -76,7 +76,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
    docker pull vulnerables/web-dvwa
    ```
 
-   ![ACR login](Images/docker-pull1.png)
+   ![ACR login](images/docker-pull1.png)
 
 7. Check the image on your local repository by running the command below:
 
@@ -84,7 +84,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
    docker images vulnerables/web-dvwa
    ```
 
-   ![Docker images](Images/docker-pull2.png)
+   ![Docker images](images/docker-pull2.png)
 
 8. Create an alias of the image by runnig the following command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command:
 
@@ -98,7 +98,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
    docker images NameOfServer.azurecr.io/vulnerables/web-dvwa
    ```
 
-   ![Docker images](Images/docker-image.png)
+   ![Docker images](images/docker-image.png)
 
 
 10. Run docker push to upload the new image to the azure repository and generate image scan (it can take some time), using the below command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command: :
@@ -107,13 +107,13 @@ Now you will use Docker to download a vulnerable image from it and push it into 
     docker push NameOfServer.azurecr.io/vulnerables/web-dvwa
     ```
 
-    ![Docker images](Images/docker-push.png)
+    ![Docker images](images/docker-push.png)
 
 11. Then navigate back to the Azure portal and open the Container registry named **<inject key="Container registry" enableCopy="false"/>**.
 
 12. Now select **Repositories** **(1)** under Services in the **<inject key="Container registry" enableCopy="false"/>** Container Registry resource. Notice the **vulnerable image** **(2)** is found in the ACR repository.
 
-    ![Image in ACR](Images/cr-repos.png)
+    ![Image in ACR](images/cr-repos.png)
 
 ### Exercise 3: Investigate the recommendation for vulnerabilities in ACR
 

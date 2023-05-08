@@ -107,7 +107,55 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img20.png)
 
-### Exercise 4: Configure your pipeline using YAML 
+
+
+### Exercise 4: Create a Hosted Build Agent and Pipeline
+
+1. In the **Azure Portal**, click in the search bar, type **vmss** and then click **Virtual machine scale sets**. 
+
+     ![](images/m3-img21.png)
+
+2. Click **Create** button.
+
+     ![](images/m3-img22.png)
+
+3. In the Create a virtual machine scale set page, select your **Subscription (1)**, select **asclab (2)** resource group, provide the **Virtual machine scale set name** as `build-agent` **(3)**, leave all other options as is and change the image to **Windows Server 2022 Datacenter: Azure Edition Core - x64 Gen2 (4)**.
+
+     ![](images/m3-img23.png)
+
+4. In the same page, enter the following username and password for **VMSS** and click **Review + create (4)**.
+
+    - **Username**: demouser
+    - **Password**: demo!pass123
+    - **Confirm password**: demo!pass123
+
+     ![](images/m3-img24.png)
+
+6. In the next page you should see that all validation has passed and you can click **Create** button. The deployment will take some minutes to finish.
+
+     ![](images/m3-img25.png)
+
+6. Once the deployment is finished, click **Go to resource** button.
+
+     ![](images/m3-img26.png)
+
+8. In the build-agent page click Instances option in the left as shown below.
+After you confirm the build-agent is running, open Azure ADO and follow the steps below:
+1. In the main page, click on your project
+2. In the bottom of left navigation page, click Project settings option.
+3. In the left navigation page, under Pipelines section, click Agent pools option.
+4. In the top corner of the right page, click Add pool button.
+5. In the Add agent pool page, click the drop down list and select Azure virtual machine scale set as 
+shown below:
+6. Select the appropriate subscription and click Authorize button as shown below:
+7. After the authorization is done, click on the virtual machine scale set drop down list and select buildagent.
+8. Under the Name field, type: windows-build-agents and type 1 in the fields shown below:
+9. Click Create button.
+10. In the Agent pools page you should see your new pool as shown the sample below
+
+
+
+### Exercise 5: Configure your pipeline using YAML 
 
 The purpose of this exercise is to allow you to see how the extension used by Defender for DevOps will check your pipeline. Before start this exercise review the following observations:
 - If you are using the free version of Azure DevOps you will receive an error message when executing the pipeline. This message will ask you to visit  https://aka.ms/azpipelines-parallelism-request/ and request increased parallelism in Azure DevOps. This can take 2 to 4 days to occur.

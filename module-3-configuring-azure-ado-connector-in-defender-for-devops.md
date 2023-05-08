@@ -52,28 +52,60 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
 ### Exercise 2: Configure the Microsoft Security DevOps Azure DevOps Extension
 
-1.	Login to the Azure DevOps organization that you created in Exercise 3.
-2.	In the right corner, click in the shopping bag icon and click **Browse marketplace** option.
-3.	In the search field, type ***Microsoft Security DevOps extension*** and click the search button.
-4.	Click in the extension, select Install. Choose appropriate Organization from the dropdown menu, select Install and Proceed to Organization.
-5.	 you have it installed, you’ll notice the Extension under ‘Installed’ section in the organization level settings as shown the example below:
+1.	Navigate back to **Azure DevOps** tab open in your browser. In the right corner, click in the **Shopping bag icon (1)** and click **Browse marketplace (2)** option.
 
-![Azure ADO Connector - Extension](../Images/M14_Fig5.PNG?raw=true)
+     ![](images/m3-img10.png)
 
+3.	In the marketplace search and select **Microsoft Security DevOps** extension.  
 
-> **Note** Admin privileges to the Azure DevOps organization are required to install the extension. If you don’t have access to install the extension, you must request access from your Azure DevOps organization’s administrator during the installation process
+     ![](images/m3-img11.png)
+
+4.	Next click on **Get it free**.
+
+     ![](images/m3-img12.png)
+
+5. Choose your **Organization (1)** from the dropdown menu, select **Install (2)**.
+
+     ![](images/m3-img13.png)
+
+6. Click on **Proceed to Organization**. 
+
+     ![](images/m3-img14.png)
+
+7.	 From **Organization settings**, click on **Extensions (1)** under **Installed (2)** extensions you can view the **Microsoft Security DevOps (3)** extension that is installed. 
+
+     ![](images/m3-img15.png)
+
+> **Note** Admin privileges to the Azure DevOps organization are required to install the extension. If you don’t have access to install the extension, you must request access from your Azure DevOps organization’s administrator during the installation process.
 
 
 ### Exercise 3: Install Free extension SARIF SAST Scans Tab
 
 In order to view the scan results (when you execute the pipelines), in an easier and readable format, install this free extension in your Azure DevOps organization.
 
-1.	Login to the Azure DevOps organization that you created in Exercise 3 and open the marketplace using the same steps that were descrivbed in the previous exercise.
-2.	In the search field, type ***SARIF SANST Scans*** and click the search button.
-3.	Follow the same steps as shown in the previous exercise to install this extension in your Azure ADO organization.
-4.	After finishing installing you should see two extensions as shown in the example below:
+1.	In **Azure DevOps** from the right corner, click in the **Shopping bag icon (1)** and click **Browse marketplace (2)** option.
 
-![Azure ADO Connector - SANS](../Images/M14_Fig6.PNG?raw=true)
+     ![](images/m3-img10.png)
+     
+2.	In the marketplace search and select **SARIF SANST Scans** extension.
+
+     ![](images/m3-img16.png)
+
+3.	Next click on **Get it free**.
+
+     ![](images/m3-img17.png)
+
+4. Choose your **Organization (1)** from the dropdown menu, select **Install (2)**.
+
+     ![](images/m3-img18.png)
+
+5. Click on **Proceed to Organization**. 
+
+     ![](images/m3-img19.png)
+
+6. From **Organization settings**, click on **Extensions (1)** under **Installed (2)** extensions you can view the **SARIF SANST Scans (3)** extension that is installed. 
+
+     ![](images/m3-img20.png)
 
 ### Exercise 4: Configure your pipeline using YAML 
 

@@ -91,8 +91,6 @@ Now you will use Docker to download a vulnerable image from it and push it into 
    ```
    docker tag vulnerables/web-dvwa NameOfServer.azurecr.io/vulnerables/web-dvwa
    ```
-   
-   ![Docker images](Images/docker-pull3.png)
 
 9. Check again the image on your local repository by running the command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command:
 
@@ -100,7 +98,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
    docker images NameOfServer.azurecr.io/vulnerables/web-dvwa
    ```
 
-   ![Docker images](Images/docker-pull4.png)
+   ![Docker images](Images/docker-image.png)
 
 
 10. Run docker push to upload the new image to the azure repository and generate image scan (it can take some time), using the below command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command: :
@@ -109,13 +107,13 @@ Now you will use Docker to download a vulnerable image from it and push it into 
     docker push NameOfServer.azurecr.io/vulnerables/web-dvwa
     ```
 
-    ![Docker images](Images/docker-pull5.png)
+    ![Docker images](Images/docker-push.png)
 
-11. Then go to the Azure portal and find the Container registry you created.
+11. Then navigate back to the Azure portal and open the Container registry named **<inject key="Container registry" enableCopy="false"/>**.
 
-12. Go to Repositories in the Container Registry. Notice the vulnerable image is found in the ACR repository.
+12. Now select **Repositories** **(1)** under Services in the **<inject key="Container registry" enableCopy="false"/>** Container Registry resource. Notice the **vulnerable image** **(2)** is found in the ACR repository.
 
-    ![Image in ACR](Images/8imageinacr.png)
+    ![Image in ACR](Images/cr-repos.png)
 
 ### Exercise 3: Investigate the recommendation for vulnerabilities in ACR
 

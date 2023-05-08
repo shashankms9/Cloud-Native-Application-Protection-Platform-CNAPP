@@ -7,23 +7,32 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
 ### Exercise 1: Configuring Azure ADO Connector
 
-1. In **Azure Portal**, for **Microsoft Defender for Cloud (1)** and then click on it from the search results **(2)**. 
+1. Navigate to https://dev.azure.com and login using the following credentials:
 
-    ![](images/m1-img1.png)
+    * Email: <inject key="AzureAdUserEmail"></inject>
+    * Password: <inject key="AzureAdUserPassword"></inject>
 
-2. From **Defender for Cloud** menu, click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (preview) (3)** option. 
+2. Click on **Organization settings**. 
+
+    ![](images/m3-img6.png)
+
+3. Next, select **Policies (1)** under **Security** and set the toggle button next to **Third-party application access via OAuth** to **On (2)**.
+
+    ![](images/m3-img7.png)
+
+4. In the **Azure Portal**, navigate to **Microsoft Defender for Cloud**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (preview) (3)** option. 
 
     ![](images/m3-img1.png)
 
-3. Enter the **Name** for the connector `CNAPP-Devops` **(1)**, select your **Subscription (2)**, select **asclab (3)** resource group, select any **Region (3)**. Select **Next : Select plans > (5)**.
+5. Enter the **Name** for the connector `CNAPP-Devops` **(1)**, select your **Subscription (2)**, select **asclab (3)** resource group, select any **Region (3)**. Select **Next : Select plans > (5)**.
 
     ![](images/m3-img2.png)
 
-4. In the next page leave the default selection with **DevOps** selected and click **Next: Authorize connection >** button to continue. 
+6. In the next page leave the default selection with **DevOps** selected and click **Next: Authorize connection >** button to continue. 
 
     ![](images/m3-img3.png)
 
-5. Click **Authorize** button. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask your permission to authorize. Scroll down the popped up window screen and click the **Accept** button as shown in the sample below:
+7. Click **Authorize** button. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask your permission to authorize. Scroll down the popped up window screen and click the **Accept** button as shown in the sample below:
 
     ![](images/m3-img4.png)
 
@@ -31,18 +40,15 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
 > **Note**: When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
 
-14.	After the authorization is complete, you will need to select your Azure ADO organization and projects as shown in the sample below:
+8.	After the authorization is complete, select your Azure ADO organization **odluser<inject key="DeploymentID" enableCopy="false" /></inject> (1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
 
-![Azure ADO Connector - Completed](../Images/M14_Fig4.PNG?raw=true)
+     ![](images/m3-img8.png)
 
-15.	After selecting the organization, keep the option **Auto discovery of projects** enabled.
-16.	Click **Review and create** button to continue.
+9.	Click on **Create**.
 
-
-> **Note** You need to be a **Project Collection Admin** in the Azure DevOps organization that you selected to complete this process. Learn more about this role [here](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/about-settings?view=azure-devops&WT.mc_id=Portal-Microsoft_Azure_Security_DevOps#project-collection-administrator-pca-role-and-managing-collections-of-projects)
-
-
-17.	After some minutes you will see the Azure DevOps connector in the **Environment settings** page and in about 15 minutes, you will start to seeing the total resources number populating.
+     ![](images/m3-img9.png)
+     
+10.	After some minutes you will see the Azure DevOps connector in the **Environment settings** page and in about 15 minutes, you will start to seeing the total resources number populating.
 
 ### Exercise 2: Configure the Microsoft Security DevOps Azure DevOps Extension
 

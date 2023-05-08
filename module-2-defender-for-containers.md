@@ -81,7 +81,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 7. Check the image on your local repository by running the command below:
 
    ```
-   docker pull vulnerables/web-dvwa
+   docker images vulnerables/web-dvwa
    ```
 
    ![Docker images](../Images/5dockerimages.png?raw=true)

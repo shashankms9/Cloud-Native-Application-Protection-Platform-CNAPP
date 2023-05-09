@@ -108,7 +108,6 @@ In order to view the scan results (when you execute the pipelines), in an easier
      ![](images/m3-img20.png)
 
 
-
 ### Exercise 4: Create a Hosted Build Agent and Pipeline
 
 1. In the **Azure Portal**, click in the search bar, type **vmss** and then click **Virtual machine scale sets**. 
@@ -119,7 +118,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img22.png)
 
-3. In the Create a virtual machine scale set page, select your **Subscription (1)**, select **asclab (2)** resource group, provide the **Virtual machine scale set name** as `build-agent` **(3)**, leave all other options as is and change the image to **Windows Server 2022 Datacenter: Azure Edition Core - x64 Gen2 (4)**.
+3. In the Create a virtual machine scale set page, select your **Subscription (1)**, select **asclab (2)** resource group, provide the **Virtual machine scale set name** as `build-agent` **(3)**, for **Region** select **<inject key="Resource group Location" enableCopy="false" /> (4)**, leave all other options as is and change the image to **Windows Server 2022 Datacenter: Azure Edition Core - x64 Gen2 (5)**.
 
      ![](images/m3-img23.png)
 
@@ -130,8 +129,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
     - **Confirm password**: demo!pass123
 
      ![](images/m3-img24.png)
-
-6. In the next page you should see that all validation has passed and you can click **Create** button. The deployment will take some minutes to finish.
+5. In the next page you should see that all validation has passed and you can click **Create** button. The deployment will take some minutes to finish.
 
      ![](images/m3-img25.png)
 
@@ -139,21 +137,42 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img26.png)
 
-8. In the build-agent page click Instances option in the left as shown below.
-After you confirm the build-agent is running, open Azure ADO and follow the steps below:
-1. In the main page, click on your project
-2. In the bottom of left navigation page, click Project settings option.
-3. In the left navigation page, under Pipelines section, click Agent pools option.
-4. In the top corner of the right page, click Add pool button.
-5. In the Add agent pool page, click the drop down list and select Azure virtual machine scale set as 
-shown below:
-6. Select the appropriate subscription and click Authorize button as shown below:
-7. After the authorization is done, click on the virtual machine scale set drop down list and select buildagent.
-8. Under the Name field, type: windows-build-agents and type 1 in the fields shown below:
-9. Click Create button.
-10. In the Agent pools page you should see your new pool as shown the sample below
+7. In the **build-agent** page, click **Instances** option in the left. Confirm the build-agents are **Running**. 
+
+     ![](images/m3-img27.png)
+
+8.  Navigate to https://dev.azure.com, in the main page, click on your **Project**.
+
+     ![](images/m3-img28.png)
 
 
+9. In the bottom of left navigation page, click **Project settings** option.
+
+     ![](images/m3-img29.png)
+
+10. In the left navigation page, under **Pipelines** section, click **Agent pools (1)** option. In the top corner of the right page, click **Add pool (2)** button.
+
+     ![](images/m3-img30.png)
+
+11. In the **Add agent pool** page, click the drop down list and select **Azure virtual machine scale set**.
+
+     ![](images/m3-img31.png)
+
+12. Select your **subscription (1)** and click **Authorize (2)** button.
+
+     ![](images/m3-img32.png)
+
+13. After the authorization is done, click on the virtual machine scale set drop down list and select **build-agent (1)**. Under the **Name** field, enter **windows-build-agents (2)**.
+
+     ![](images/m3-img33.png)
+
+14. Enter `1` under **Maximum number of virtual machines in the scale set (1)** and **Number of agents to keep on standby (2)** fields then click **Create (3)**.
+
+     ![](images/m3-img34.png)
+
+16. In the **Agent pools** page you can view newly created pool.
+
+     ![](images/m3-img35.png)
 
 ### Exercise 5: Configure your pipeline using YAML 
 

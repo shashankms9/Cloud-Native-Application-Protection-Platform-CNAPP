@@ -5,35 +5,50 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 ### Exercise 1: Connecting your GitHub organization
 
-1.	Login to your Azure Portal and navigate to Defender for Cloud dashboard
-2.	In the left navigation pane, click **Environment settings** option
-3.	Click the **Add environment** button and click **GitHub (preview)** option. The **Create GitHub connection** page appears as shown the sample below.
+1.	In [Azure Portal](http://portal.azure.com/), search for **Microsoft Defender for Cloud (1)** and then click on it from the search results **(2)**. 
 
-![Azure ADO Connector](../Images/Picture1.png?raw=true)
+    ![](images/m1-img1.png)
 
-4.	Type the name for the connector, select the subscription, select the Resource Group, which can be the same you used in this lab and the region. 
-5.	Click **Next:select plans >** button to continue.
-6.	In the next page leave the default selection with **DevOps** selected and click **Next: Authorize connection >** button to continue. The following page appears:
+2.	In the left navigation pane, click **Environment settings (1)**, click the **Add environment (2)** button and click **GitHub (preview) (3)**. 
 
-![Azure ADO Connector - Authorize](../Images/Pic2.png?raw=true)
+    ![](images/m4-img1.png)
+
+3. In **Create GitHub connection** page, enter the **Name** for the connector as `CNAPP-git` **(1)**, select your **Subscription (2)**, select **asclab (3)** **Resource Group** and select any **Region (4)**.	Click **Next:select plans > (5)** button to continue.
+
+    ![](images/m4-img2.png)
+
+4. In the next page leave the default selection with **DevOps** selected and click **Next: Authorize connection >** button to continue. 
+
+    ![](images/m4-img3.png)
 
 
-7.	Click **Authorize** button. Now Click **Install** button under Install Defender for DevOps app. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask you confirmation of which repository you'd like to install the app. 
+5.	Click **Authorize** button. If you get an authorization pop-up click **Authorize Microsoft SecurityDevOps**.
 
-![Azure ADO Connector - Install](../Images/Pic3.png?raw=true)
+    ![](images/m4-img4.png)
 
-![Azure ADO Connector - Choose Repository](../Images/Pic4.png?raw=true)
+    ![](images/m4-img5.png)
 
-8. Choose **All repositories** or **only select repositories** as per your choice and click on **Install**
+6.	Now Click **Install** button under **Install Defender for DevOps app**. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask you confirmation of which repository you'd like to install the app. Select your **Github repository**. 
 
-![Azure ADO Connector - Install](../Images/Pic5.png?raw=true)
+    ![](images/m4-img6.png)
 
-9. Once you click on install, you’ll receive another pop-up window requesting to enter the password inorder to confirm access   
+    ![](images/m4-img7.png)
 
-10. Back to the Azure portal, you’ll notice that the extension is installed > Click on **Review and Create** button to continue.  
+7. Choose **All repositories (1)** and click on **Install (2)**
+
+    ![](images/m4-img8.png)
+
+8. Back in the **Azure portal**, you’ll notice that the extension is installed, click on **Review and Create** button to continue.  
+
+    ![](images/m4-img9.png)
+
+9. Click **Create**.
+
+    ![](images/m4-img10.png)
+
 11. Navigating to the **Environment Settings** under **Microsoft Defender for Cloud**, you’ll notice the GitHub Connection was successfully created. 
 
-![Azure ADO Connector - Confirming the connector](../Images/Pic6.png?raw=true)
+    ![](images/m4-img11.png)
 
 ### Exercise 2: Configure the Microsoft Security DevOps GitHub action
 

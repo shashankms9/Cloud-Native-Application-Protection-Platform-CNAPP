@@ -7,7 +7,7 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
 ### Exercise 1: Configuring Azure ADO Connector
 
-1. Navigate to https://dev.azure.com and login using the following credentials:
+1. Navigate to [Azure DevOps](https://dev.azure.com) and login using the following credentials:
 
     * Email: <inject key="AzureAdUserEmail"></inject>
     * Password: <inject key="AzureAdUserPassword"></inject>
@@ -38,7 +38,7 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
     ![](images/m3-img5.png)
 
-> **Note**: When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
+   > **Note**: When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
 
 8.	After the authorization is complete, select your Azure ADO organization **odluser<inject key="DeploymentID" enableCopy="false" /></inject> (1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
 
@@ -52,7 +52,7 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
 ### Exercise 2: Configure the Microsoft Security DevOps Azure DevOps Extension
 
-1.	Navigate back to **Azure DevOps** tab open in your browser. In the right corner, click in the **Shopping bag icon (1)** and click **Browse marketplace (2)** option.
+1.	Navigate back to [Azure DevOps](https://dev.azure.com) tab open in your browser. In the right corner, click in the **Shopping bag icon (1)** and click **Browse marketplace (2)** option.
 
      ![](images/m3-img10.png)
 
@@ -76,7 +76,7 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
      ![](images/m3-img15.png)
 
-> **Note** Admin privileges to the Azure DevOps organization are required to install the extension. If you don’t have access to install the extension, you must request access from your Azure DevOps organization’s administrator during the installation process.
+   > **Note** Admin privileges to the Azure DevOps organization are required to install the extension. If you don’t have access to install the extension, you must request access from your Azure DevOps organization’s administrator during the installation process.
 
 
 ### Exercise 3: Install Free extension SARIF SAST Scans Tab
@@ -141,7 +141,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img27.png)
 
-8.  Navigate to https://dev.azure.com, in the main page, click on your **Project**.
+8.  Navigate to [Azure DevOps](https://dev.azure.com), in the main page, click on your **Project**.
 
      ![](images/m3-img28.png)
 
@@ -176,26 +176,25 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
 ### Exercise 5: Configure your pipeline using YAML 
 
-The purpose of this exercise is to allow you to see how the extension used by Defender for DevOps will check your pipeline. Before start this exercise review the following observations:
-- If you are using the free version of Azure DevOps you will receive an error message when executing the pipeline. This message will ask you to visit  https://aka.ms/azpipelines-parallelism-request/ and request increased parallelism in Azure DevOps. This can take 2 to 4 days to occur.
-- An alternative way to create a pipeline is by using a Hosted Build Agent, which is the method used in this exercise. To create your hosted build agent follow the steps from [Module 14 - Appendix 1](Module14-Appendix1.pdf). After finishing these steps, you can continue
+The purpose of this exercise is to allow you to see how the extension used by Defender for DevOps will check your pipeline.
 
-1. Login to the Azure DevOps organization that you created in Exercise 3 and open your project.
-2. In the left navigation pane, click **Pipelines** as shown below:
+1. Login to the [Azure DevOps](https://dev.azure.com) and open your **Project**.
 
-![Azure ADO Connector - Pipeline](../Images/M14_Fig7.PNG?raw=true)
+     ![](images/m3-img28.png)
 
-3. In the right pane, click **New pipeline** button.
-4. In the **Where is your code?** page, click **Azure Repos Git** as shown below: 
+2. In the left navigation pane, click **Pipelines (1)**. In the right pane, click **Create Pipeline (2)** button.
 
-![Azure ADO Connector - where](../Images/M14_Fig8.PNG?raw=true)
+     ![](images/m3-img36.png)
 
-5. Click the appropriate repository.
-6. In the **Configure your pipeline** page, click **Starter pipeline** as shown below: 
+3. In the **Where is your code?** page, click **Azure Repos Git**.
 
-![Azure ADO Connector - starter](../Images/M14_Fig9.PNG?raw=true)
+     ![](images/m3-img37.png)
 
-7. In the page that opens up, replace the YAML code for the one below:
+4. Click on the exisiting **Repository**.
+
+     ![](images/m3-img38.png)
+
+5. In the **Configure your pipeline** page, replace the **YAML code (1)** for the one below and click **Save and run (2)** :
 
 ```
 # Starter pipeline
@@ -220,21 +219,37 @@ steps:
 - task: MicrosoftSecurityDevOps@1
   displayName: 'Microsoft Security DevOps'
 ```
+     
+   ![](images/m3-img39.png)
 
-> **Note** Observe that the pool is pointing to windows-build-agents, which is the VMSS that you created.
+   > **Note**: Observe that the pool is pointing to windows-build-agents, which is the VMSS that you created.
 
-8. Click **Save and run** button and then click Save and run button again.
+6. Click **Save and run** button again.
+
+      ![](images/m3-img40.png)
+
+7. Click **View** on **"This pipeline needs permission to access a resource before this run can continue"** pop-up.
+
+      ![](images/m3-img41.png)
+
+8. On **Waiting for review page**, click on **Permit**.
+
+      ![](images/m3-img42.png)
+
+9. Next on **"Permit access?"** pop-up, click **Permit**.
+
+      ![](images/m3-img43.png)
 
 
-> **Note** At this point the job will queue up to run. This step may take some time to spin up a build agent in the VMSS. During this time, if you go back to VMSS dashboard you will see that the instance is getting created
+   > **Note**: At this point the job will queue up to run. This step may take some time to spin up a build agent in the VMSS. During this time, if you go back to VMSS dashboard you will see that the instance is getting created
 
 9. In a few more minutes, the job will start to have some activity as shown the example below:
 
-![Azure ADO Connector - result](../Images/M14_Fig10.PNG?raw=true)
+      ![](images/m3-img44.png)
 
 10. After it finishes you can see scan done by Defender for DevOps. To do that click **Microsoft Security DevOps** section in the left and you will see the output of the actions that were done as shown below:
 
-![Azure ADO Connector - scanresult](../Images/M14_Fig11.PNG?raw=true)
+      ![](images/m3-img45.png)
 
 
 

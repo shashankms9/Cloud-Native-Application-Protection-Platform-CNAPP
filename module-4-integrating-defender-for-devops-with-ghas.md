@@ -52,22 +52,16 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 ### Exercise 2: Configure the Microsoft Security DevOps GitHub action
 
-To setup GitHub action:
-1.	Login to the GitHub repo that you created in Exercise 4.
-2.	Select a repository on which you want to configure the GitHub action.
-3.	Select **Actions** as shown in the image below 
+1.	Login to the **GitHub** using the github credentials.
 
-![Azure GitHub - Actions](../Images/Pic7.png?raw=true)
 
-4.	Select **New Workflow**
+2.	Select **CNAPP** repository.
 
-![Azure GitHub - New workflow](../Images/Pic8.png?raw=true)
+3.	Select **Actions (1)** and click on **set up a workflow yourself (2)**.  
 
-5.	In the text box, enter a name for your workflow file. For example **msdevopssec.yml**
+    ![](images/m4-img12.png)
 
-![Azure GitHub - New workflow](../Images/Pic9.png?raw=true)
-
-6.	Copy and paste the following sample action workflow into the **Edit new file** tab. 
+4. Enter the name for your workflow file as **msdevopssec.yml (1)**. Then copy and paste the following sample action workflow into the **Edit new file (2)** tab. 
 
 ~~~~~~
 name: MSDO IaC Scan
@@ -111,30 +105,34 @@ jobs:
         sarif_file: ${{ steps.msdo.outputs.sarifFile }}
 ~~~~~~~
 
-7.	Click on **Start Commit** **Commit new file**
+   
+   ![](images/m4-img13.png)
 
-![Azure GitHub - Commit](../Images/Pic10.png?raw=true)
+5.	Click on **Commit Changes** and click **Commit Changes** again on 
 
-![Azure GitHub - Commit](../Images/Pic11.png?raw=true)
+    ![](images/m4-img14.png)
 
-The process can take up to one minute to complete. 
-A workflow gets created in your repositories github folder with the above copied yml file 
+    ![](images/m4-img15.png)
 
-![Azure GitHub - Workflow example](../Images/Picture11.png?raw=true)
+6. The process can take up to one minute to complete. A workflow gets created in your repositories github folder with the above copied yml file. 
 
-8.	Select **Actions** and verify the new action is running/completed running. 
+    ![](images/m4-img16.png)
 
-![Azure GitHub - New Action](../Images/Picture12.png?raw=true)
+7.	Select **Actions** and wait for it to complete running. 
 
-9.	Once this job completes running, navigate to the Security tab > Click on Code scanning 
+    ![](images/m4-img17.png)
 
-NOTE: if you don’t see anything is because your code scanning feature is disabled in GitHub. Refer to the prerequisites section of this lab to review the instructions to enable. 
+    >**Note**: If the work flows fails with error **Resource not accessible by integration**. Navigate to repository **Settings (1)**, under **Actions (2)** select **General (3)** and set the **Workflow Permissions** to **Read and write permissions (4)** then click **Save (5)**. Now **Re-run** the workflow.
 
-10.	If you see No code scanning alerts here, In the filter of Code scanning tab, choose is:open tool: Notice the available tools Defender for DevOps uses.
+      ![](images/m4-img18.png)
 
-![Azure GitHub - Code Scanning](../Images/Picture13.png?raw=true)
+8.	Once this job completes running, navigate to the **Security (1)** tab and click on **Code scanning (2)**. 
 
-11.	Code scanning findings will be filtered by specific MSDO tools in GitHub. These code scanning results are also pulled into Defender for Cloud recommendations.
+      ![](images/m4-img19.png)
 
-![Azure GitHub - Code Scanning Findins](../Images/Picture14.png?raw=true)
+9.	If you see No code scanning alerts here, In the filter of Code scanning tab, choose is:open tool: Notice the available tools Defender for DevOps uses.
+
+10.	Code scanning findings will be filtered by specific MSDO tools in GitHub. These code scanning results are also pulled into Defender for Cloud recommendations.
+
+      ![](images/m4-img20.png)
 

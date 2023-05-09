@@ -21,7 +21,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
    >**Note:** To gain access to the capabilities provided by Defender CSPM, you'll need to <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-enhanced-security">enable the Defender Cloud Security Posture Management (CSPM) plan </a> on your subscription
 
-1.	In **Azure Portal**, for **Microsoft Defender for Cloud (1)** and then click on it from the search results **(2)**. 
+1.	In **Azure Portal**, search for **Microsoft Defender for Cloud (1)** and then click on it from the search results **(2)**. 
 
     ![](images/m1-img1.png)
 

@@ -16,9 +16,11 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
     ![](images/m3-img6.png)
 
-3. Next, select **Policies (1)** under **Security** and set the toggle button next to **Third-party application access via OAuth** to **On (2)**.
+3. Next, select **Policies (1)** under **Security** and set the toggle button **On** for **Third-party application access via OAuth (2)** and **Allow public projects (3)**. Then click **Save (4)** on **Change policy setting** pop-up.
 
-    ![](images/m3-img7.png)
+    ![](images/m3-img46.png)
+
+    ![](images/m3-img47.png)
 
 4. In the **Azure Portal**, navigate to **Microsoft Defender for Cloud**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (preview) (3)** option. 
 

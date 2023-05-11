@@ -52,8 +52,9 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 ### Exercise 2: Configure the Microsoft Security DevOps GitHub action
 
-1.	Login to the **GitHub** using the github credentials.
+1.	Login to the [GitHub](https://github.com/), by fetching the details from **Licenses (1)** and copy the **Github credentials (2)** .
 
+    ![](images/m4-img21.png)
 
 2.	Select **CNAPP** repository.
 

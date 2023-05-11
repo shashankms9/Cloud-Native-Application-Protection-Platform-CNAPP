@@ -5,7 +5,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 ### Exercise 1: Connecting your GitHub organization
 
-1.	Login to the [GitHub](https://github.com/), by fetching the details from **Licenses (1)** under **Environment Details** page and copy the **Github credentials (2)** .
+1.	Login to the [GitHub](https://github.com/), by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)** .
 
     ![](images/m4-img21.png)
 

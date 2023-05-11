@@ -26,7 +26,7 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
     ![](images/m3-img48.png)
 
-5. In the **Azure Portal**, navigate to **Microsoft Defender for Cloud**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (preview) (3)** option. 
+5. Go to **Azure Portal**, navigate to **Microsoft Defender for Cloud**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (preview) (3)** option. 
 
     ![](images/m3-img1.png)
 

@@ -137,13 +137,8 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
     ![](images/m4-img17.png)
 
-7.	Once this job completes running, navigate to the **Security (1)** tab and click on **Code scanning (2)**. 
+7.	Once this job completes running, navigate to the **Security (1)** tab and click on **Code scanning (2)**. Code scanning findings will be filtered by specific MSDO tools in GitHub.
 
-      ![](images/m4-img19.png)
+    ![](images/m4-img28.png)
 
-8.	If you see No code scanning alerts here, In the filter of Code scanning tab, choose is:open tool: Notice the available tools Defender for DevOps uses.
-
-9.	Code scanning findings will be filtered by specific MSDO tools in GitHub. These code scanning results are also pulled into Defender for Cloud recommendations.
-
-      ![](images/m4-img20.png)
 

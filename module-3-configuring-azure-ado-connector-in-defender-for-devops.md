@@ -56,6 +56,8 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
      
 11.	After some minutes you will see the Azure DevOps connector in the **Environment settings** page and in about 15 minutes, you will start to seeing the total resources number populating.
 
+    ![](images/m3-img49.png)
+
 ### Exercise 2: Configure the Microsoft Security DevOps Azure DevOps Extension
 
 1.	Navigate back to [Azure DevOps](https://dev.azure.com) tab open in your browser. In the right corner, click in the **Shopping bag icon (1)** and click **Browse marketplace (2)** option.

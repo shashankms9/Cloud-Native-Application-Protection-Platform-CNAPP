@@ -5,6 +5,22 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 ### Exercise 1: Connecting your GitHub organization
 
+1.	Login to the [GitHub](https://github.com/), by fetching the details from **Licenses (1)** under **Environment Details** page and copy the **Github credentials (2)** .
+
+    ![](images/m4-img21.png)
+
+2. Navigate to https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main **(1)** and click on **Fork (2)**.
+
+    ![](images/m4-img22.png)
+
+3. In **Create a new fork**, disable **Copy the main branch only (1)** and click **Create fork (1)**. 
+
+    ![](images/m4-img23.png)
+
+4. Navigate to repository **Settings (1)**, under **Actions (2)** select **General (3)** and set the **Workflow Permissions** to **Read and write permissions (4)** then click **Save (5)**.
+
+      ![](images/m4-img18.png)
+
 1.	In [Azure Portal](http://portal.azure.com/), search for **Microsoft Defender for Cloud (1)** and then click on it from the search results **(2)**. 
 
     ![](images/m1-img1.png)
@@ -52,9 +68,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 ### Exercise 2: Configure the Microsoft Security DevOps GitHub action
 
-1.	Login to the [GitHub](https://github.com/), by fetching the details from **Licenses (1)** and copy the **Github credentials (2)** .
 
-    ![](images/m4-img21.png)
 
 2.	Select **CNAPP** repository.
 
@@ -123,10 +137,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
     ![](images/m4-img17.png)
 
-    >**Note**: If the work flows fails with error **Resource not accessible by integration**. Navigate to repository **Settings (1)**, under **Actions (2)** select **General (3)** and set the **Workflow Permissions** to **Read and write permissions (4)** then click **Save (5)**. Now **Re-run** the workflow.
-
-      ![](images/m4-img18.png)
-
+    
 8.	Once this job completes running, navigate to the **Security (1)** tab and click on **Code scanning (2)**. 
 
       ![](images/m4-img19.png)

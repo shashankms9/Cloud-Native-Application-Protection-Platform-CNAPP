@@ -64,50 +64,50 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 4. Enter the name for your workflow file as **msdevopssec.yml (1)**. Then copy and paste the following sample action workflow into the **Edit new file (2)** tab. 
 
-~~~~~~
-name: MSDO IaC Scan
+    ~~~~~~
+    name: MSDO IaC Scan
 
-on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-    
-  pull_request:
-    branches: [ main ]
+    on:
+      # Triggers the workflow on push or pull request events but only for the main branch
+      push:
+        branches: [ main ]
 
-  workflow_dispatch:
+      pull_request:
+        branches: [ main ]
 
-jobs:
-  security:
-    runs-on: windows-latest
-    continue-on-error: false
-    strategy:
-      fail-fast: true
-      
-    steps:
-    - uses: actions/checkout@v3
-    
-    - uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: |
-          5.0.x
-          6.0.x
-          
-    - name: Run Microsoft Security DevOps
-      uses: microsoft/security-devops-action@preview
-      continue-on-error: false
-      id: msdo
-      with:
-        categories: 'IaC'
+      workflow_dispatch:
 
-    - name: Upload alerts to Security tab
-      uses: github/codeql-action/upload-sarif@v2
-      with:
-        sarif_file: ${{ steps.msdo.outputs.sarifFile }}
-~~~~~~~
+    jobs:
+      security:
+        runs-on: windows-latest
+        continue-on-error: false
+        strategy:
+          fail-fast: true
+
+        steps:
+        - uses: actions/checkout@v3
+
+        - uses: actions/setup-dotnet@v3
+          with:
+            dotnet-version: |
+              5.0.x
+              6.0.x
+
+        - name: Run Microsoft Security DevOps
+          uses: microsoft/security-devops-action@preview
+          continue-on-error: false
+          id: msdo
+          with:
+            categories: 'IaC'
+
+        - name: Upload alerts to Security tab
+          uses: github/codeql-action/upload-sarif@v2
+          with:
+            sarif_file: ${{ steps.msdo.outputs.sarifFile }}
+    ~~~~~~~
 
    
-   ![](images/m4-img13.png)
+    ![](images/m4-img13.png)
 
 5.	Click on **Commit Changes** and click **Commit Changes** again on 
 

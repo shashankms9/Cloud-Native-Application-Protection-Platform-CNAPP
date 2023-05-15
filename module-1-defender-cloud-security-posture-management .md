@@ -41,8 +41,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
    >**Note:** Agentless scanning for VMs provides vulnerability assessment and software inventory in 24 hours. Leave the setup and comeback after 24 hours.
 
-
-     ![](images/m1-img5.png)
+      ![](images/m1-img5.png)
 
 ## Exercise 2: Explore Attack Paths in your Environment
 
@@ -64,39 +63,38 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
 ## Exercise 3: Build query with Cloud Security Explorer
 
-1.	From **Defender for Cloud** menu, open the **Cloud Security Explorer** page.
+1. From **Defender for Cloud** menu, open the **Cloud Security Explorer** page.
 
-      ![](images/m1-img6.png)
+     ![](images/m1-img6.png)
     
-    
-2.	Select a predefined query Template **“Internet exposed VMs with high severity vulnerabilities” (1)** and click on **Search (2)**.
+2. Select a predefined query Template **“Internet exposed VMs with high severity vulnerabilities” (1)** and click on **Search (2)**.
 
       ![](images/m1-img7.png)
 
-3.	You will find the list of VMs with high severity Vulnerabilities.
+3. You will find the list of VMs with high severity Vulnerabilities.
 
-4.	Select a predefined query Template **“Internet exposed SQL servers with managed identity”** and click on **Search**.
+4. Select a predefined query Template **“Internet exposed SQL servers with managed identity”** and click on **Search**.
 
       ![](images/m1-img8.png)
 
-5.	You will find the list of SQL servers with managed identity.
+5. You will find the list of SQL servers with managed identity.
 
 
-6.	You can also explore and build your own queries using query builder, from the dropdown select **Compute (1)** -> **Virtual machines (2)** -> **Azure Virtual Machines (3)** then click **Done (4)**.
+6. You can also explore and build your own queries using query builder, from the dropdown select **Compute (1)** -> **Virtual machines (2)** -> **Azure Virtual Machines (3)** then click **Done (4)**.
 
       ![](images/m1-img9.png)
 
    
-  - Click on **+ (1)** and under select condition, select **Security (2)** -> **vulnerable to remote code execution (3)**.
+ - Click on **+ (1)** and under select condition, select **Security (2)** -> **vulnerable to remote code execution (3)**.
 
       
       ![](images/m1-img10.png)
 
-7.	Explore your Environment for Virtual Machines with a specific vulnerability. Click on **Vulnerabilities (1)** and select **By CVE ID (2)**.
+7. Explore your Environment for Virtual Machines with a specific vulnerability. Click on **Vulnerabilities (1)** and select **By CVE ID (2)**.
 
       ![](images/m1-img11.png)
  
-   - Search for Virtual Machines that has a specific Vulnerability
+ - Search for Virtual Machines that has a specific Vulnerability.
  
       
       ![](images/m1-img15.png)

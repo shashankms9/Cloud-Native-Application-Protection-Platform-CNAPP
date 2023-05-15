@@ -1,0 +1,27 @@
+[ {
+  "Name": "CNAPP Workshop",
+  "Language": "English",
+  "Files": [
+        {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/main/GettingStarted.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/main/module-1-defender-cloud-security-posture-management%20.md",
+      "Order": 2
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/main/module-2-defender-for-containers.md",
+      "Order": 3
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/main/module-3-configuring-azure-ado-connector-in-defender-for-devops.md",
+      "Order": 4
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/main/module-4-integrating-defender-for-devops-with-ghas.md",
+      "Order": 5
+    }
+    
+  ]
+} ]

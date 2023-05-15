@@ -7,15 +7,15 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 1.	Login to the [GitHub](https://github.com/), by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)** .
 
-    ![](images/m4-img21.png)
+      ![](images/m4-img21.png)
 
 2. Navigate to https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main **(1)** and click on **Fork (2)**.
 
-    ![](images/m4-img22.png)
+      ![](images/m4-img22.png)
 
 3. In **Create a new fork**, disable **Copy the main branch only (1)** and click **Create fork (1)**. 
 
-    ![](images/m4-img23.png)
+      ![](images/m4-img23.png)
 
 4. Navigate to repository **Settings (1)**, under **Actions (2)** select **General (3)** and set the **Workflow Permissions** to **Read and write permissions (4)** then click **Save (5)**.
 
@@ -23,62 +23,62 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 5.	Go to [Azure Portal](http://portal.azure.com/), search for **Microsoft Defender for Cloud (1)** and then click on it from the search results **(2)**. 
 
-    ![](images/m1-img1.png)
+      ![](images/m1-img1.png)
 
 6.	In the left navigation pane, click **Environment settings (1)**, click the **Add environment (2)** button and click **GitHub (preview) (3)**. 
 
-    ![](images/m4-img1.png)
+      ![](images/m4-img1.png)
 
 7. In **Create GitHub connection** page, enter the **Name** for the connector as `CNAPP-git` **(1)**, select your **Subscription (2)**, select **asclab (3)** **Resource Group** and select any **Region (4)**.	Click **Next:select plans > (5)** button to continue.
 
-    ![](images/m4-img2.png)
+      ![](images/m4-img2.png)
 
 8. In the next page leave the default selection with **DevOps** selected and click **Next: Authorize connection >** button to continue. 
 
-    ![](images/m4-img3.png)
+      ![](images/m4-img3.png)
 
 
 9.	Click **Authorize** button. If you get an authorization pop-up click **Authorize Microsoft SecurityDevOps**.
 
-    ![](images/m4-img4.png)
+      ![](images/m4-img4.png)
 
-    ![](images/m4-img5.png)
+      ![](images/m4-img5.png)
 
 10.	Now Click **Install** button under **Install Defender for DevOps app**. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask you confirmation of which repository you'd like to install the app. Select your **Github repository**. 
 
-    ![](images/m4-img6.png)
+      ![](images/m4-img6.png)
 
-    ![](images/m4-img7.png)
+      ![](images/m4-img7.png)
 
 11. Choose **All repositories (1)** and click on **Install (2)**
 
-    ![](images/m4-img8.png)
+      ![](images/m4-img8.png)
 
 12. Back in the **Azure portal**, you’ll notice that the extension is installed, click on **Review and Create** button to continue.  
 
-    ![](images/m4-img9.png)
+      ![](images/m4-img9.png)
 
 13. Click **Create**.
 
-    ![](images/m4-img10.png)
+      ![](images/m4-img10.png)
 
 14. Navigating to the **Environment Settings** under **Microsoft Defender for Cloud**, you’ll notice the GitHub Connection was successfully created. 
 
-    ![](images/m4-img11.png)
+      ![](images/m4-img11.png)
 
 ### Exercise 2: Configure the Microsoft Security DevOps GitHub action
 
 1. Navigate back to **GitHub**, from **Microsoft-Defender-for-Cloud** repository, click on **Actions (1)** and **I understand my workflows, go ahead and enable them (2)**.
 
-    ![](images/m4-img24.png)
+      ![](images/m4-img24.png)
 
 2.	Click on **New workflow**.
 
-    ![](images/m4-img25.png)
+      ![](images/m4-img25.png)
 
 3.	Next, for **Choose a workflow** click on **set up a workflow yourself**.  
 
-    ![](images/m4-img26.png)
+      ![](images/m4-img26.png)
 
 4. Enter the name for your workflow file as **msdevopssec.yml (1)**. Then copy and paste the following sample action workflow into the **Edit new file (2)** tab. 
 
@@ -125,20 +125,18 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
     ~~~~~~~
 
    
-    ![](images/m4-img27.png)
+      ![](images/m4-img27.png)
 
 5.	Click on **Commit Changes** and click **Commit Changes** again on 
 
-    ![](images/m4-img14.png)
+      ![](images/m4-img14.png)
 
-    ![](images/m4-img15.png)
+      ![](images/m4-img15.png)
 
 6. The process can take up to one minute to complete. A workflow gets created in your repositories github folder with the above copied yml file. Select **Actions** and wait for it to complete running. 
 
-    ![](images/m4-img17.png)
+      ![](images/m4-img17.png)
 
 7.	Once this job completes running, navigate to the **Security (1)** tab and click on **Code scanning (2)**. Code scanning findings will be filtered by specific MSDO tools in GitHub.
 
-    ![](images/m4-img28.png)
-
-
+      ![](images/m4-img28.png)

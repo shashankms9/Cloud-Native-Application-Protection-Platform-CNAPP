@@ -7,7 +7,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 1.	Login to the [GitHub](https://github.com/), by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)** .
 
-      ![](images/m4-img21.png)
+     ![](images/m4-img21.png)
 
 2. Navigate to https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main **(1)** and click on **Fork (2)**.
 

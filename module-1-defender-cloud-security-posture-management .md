@@ -42,11 +42,11 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
    >**Note:** Agentless scanning for VMs provides vulnerability assessment and software inventory in 24 hours. Leave the setup and comeback after 24 hours.
 
 
- 	![](images/m1-img5.png)
+     ![](images/m1-img5.png)
 
 ## Exercise 2: Explore Attack Paths in your Environment
 
-1.	From **Defender for Cloud** menu, open the **Recommendations (1)** page.	You will find Attack path tab as below, click on **Attack path (2)**. You will find the Attack Paths in your Environment. 
+1. From **Defender for Cloud** menu, open the **Recommendations (1)** page.	You will find Attack path tab as below, click on **Attack path (2)**. You will find the Attack Paths in your Environment. 
 
       ![](images/m1-img13.1.png)
 
@@ -66,12 +66,12 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
 1.	From **Defender for Cloud** menu, open the **Cloud Security Explorer** page.
 
-     ![](images/m1-img6.png)
+      ![](images/m1-img6.png)
     
     
 2.	Select a predefined query Template **“Internet exposed VMs with high severity vulnerabilities” (1)** and click on **Search (2)**.
 
-     ![](images/m1-img7.png)
+      ![](images/m1-img7.png)
 
 3.	You will find the list of VMs with high severity Vulnerabilities.
 
@@ -87,7 +87,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
       ![](images/m1-img9.png)
 
    
-	 - Click on **+ (1)** and under select condition, select **Security (2)** -> **vulnerable to remote code execution (3)**.
+  - Click on **+ (1)** and under select condition, select **Security (2)** -> **vulnerable to remote code execution (3)**.
 
       
       ![](images/m1-img10.png)
@@ -96,7 +96,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
       ![](images/m1-img11.png)
  
-   	 - Search for Virtual Machines that has a specific Vulnerability
+   - Search for Virtual Machines that has a specific Vulnerability
  
       
       ![](images/m1-img15.png)
@@ -113,7 +113,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
 10.	Explore your Environment for Storage Accounts with a Sensitive Data. Change the condition to **Data (1)** and click on **Contains sensitive data (2)**.
 
-    ![](images/m1-img18.png)
+      ![](images/m1-img18.png)
 
 
  

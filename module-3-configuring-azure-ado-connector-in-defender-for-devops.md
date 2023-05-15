@@ -48,43 +48,43 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
 9.	After the authorization is complete, select your Azure ADO organization **odluser<inject key="DeploymentID" enableCopy="false" /></inject> (1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
 
-     ![](images/m3-img8.png)
+      ![](images/m3-img8.png)
 
 10.	Click on **Create**.
 
-     ![](images/m3-img9.png)
+      ![](images/m3-img9.png)
      
 11.	After some minutes you will see the Azure DevOps connector in the **Environment settings** page and in about 15 minutes, you will start to seeing the total resources number populating.
 
-    ![](images/m3-img49.png)
+     ![](images/m3-img49.png)
 
 ### Exercise 2: Configure the Microsoft Security DevOps Azure DevOps Extension
 
 1.	Navigate back to [Azure DevOps](https://dev.azure.com) tab open in your browser. In the right corner, click in the **Shopping bag icon (1)** and click **Browse marketplace (2)** option.
 
-     ![](images/m3-img10.png)
+      ![](images/m3-img10.png)
 
-3.	In the marketplace search and select **Microsoft Security DevOps** extension.  
+2.	In the marketplace search and select **Microsoft Security DevOps** extension.  
 
-     ![](images/m3-img11.png)
+      ![](images/m3-img11.png)
 
-4.	Next click on **Get it free**.
+3.	Next click on **Get it free**.
 
-     ![](images/m3-img12.png)
+      ![](images/m3-img12.png)
 
-5. Choose your **Organization (1)** from the dropdown menu, select **Install (2)**.
+4. Choose your **Organization (1)** from the dropdown menu, select **Install (2)**.
 
-     ![](images/m3-img13.png)
+      ![](images/m3-img13.png)
 
-6. Click on **Proceed to Organization**. 
+5. Click on **Proceed to Organization**. 
 
      ![](images/m3-img14.png)
 
-7.	 From **Organization settings**, click on **Extensions (1)** under **Installed (2)** extensions you can view the **Microsoft Security DevOps (3)** extension that is installed. 
+6. From **Organization settings**, click on **Extensions (1)** under **Installed (2)** extensions you can view the **Microsoft Security DevOps (3)** extension that is installed. 
 
-     ![](images/m3-img15.png)
+      ![](images/m3-img15.png)
 
-   > **Note** Admin privileges to the Azure DevOps organization are required to install the extension. If you don’t have access to install the extension, you must request access from your Azure DevOps organization’s administrator during the installation process.
+    >**Note** Admin privileges to the Azure DevOps organization are required to install the extension. If you don’t have access to install the extension, you must request access from your Azure DevOps organization’s administrator during the installation process.
 
 
 ### Exercise 3: Install Free extension SARIF SAST Scans Tab

@@ -46,9 +46,9 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 10.	Now Click **Install** button under **Install Defender for DevOps app**. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask you confirmation of which repository you'd like to install the app. Select your **Github repository**. 
 
-    ![](images/m4-img6.png)
+  ![](images/m4-img6.png)
 
-    ![](images/m4-img7.png)
+  ![](images/m4-img7.png)
 
 11. Choose **All repositories (1)** and click on **Install (2)**
 

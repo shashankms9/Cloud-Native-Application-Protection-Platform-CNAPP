@@ -50,11 +50,11 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
       ![](images/m3-img8.png)
 
-10.	Click on **Create**.
+10. Click on **Create**.
 
       ![](images/m3-img9.png)
      
-11.	After some minutes you will see the Azure DevOps connector in the **Environment settings** page and in about 15 minutes, you will start to seeing the total resources number populating.
+11. After some minutes you will see the Azure DevOps connector in the **Environment settings** page and in about 15 minutes, you will start to seeing the total resources number populating.
 
      ![](images/m3-img49.png)
 

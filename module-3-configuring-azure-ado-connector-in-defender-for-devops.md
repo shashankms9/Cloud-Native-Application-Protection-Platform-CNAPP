@@ -46,17 +46,17 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
    > **Note**: When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
 
-9.	After the authorization is complete, select your Azure ADO organization **odluser<inject key="DeploymentID" enableCopy="false" /></inject> (1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
+9. After the authorization is complete, select your Azure ADO organization **odluser<inject key="DeploymentID" enableCopy="false" /></inject> (1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
 
       ![](images/m3-img8.png)
 
 10. Click on **Create**.
 
-   ![](images/m3-img9.png)
+      ![](images/m3-img9.png)
       
 11. After some minutes you will see the Azure DevOps connector in the **Environment settings** page and in about 15 minutes, you will start to seeing the total resources number populating.
 
-   ![](images/m3-img49.png)
+      ![](images/m3-img49.png)
 
 ### Exercise 2: Configure the Microsoft Security DevOps Azure DevOps Extension
 
@@ -91,17 +91,17 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
 In order to view the scan results (when you execute the pipelines), in an easier and readable format, install this free extension in your Azure DevOps organization.
 
-1.	In **Azure DevOps** from the right corner, click in the **Shopping bag icon (1)** and click **Browse marketplace (2)** option.
+1. In **Azure DevOps** from the right corner, click in the **Shopping bag icon (1)** and click **Browse marketplace (2)** option.
 
-     ![](images/m3-img10.png)
+      ![](images/m3-img10.png)
      
-2.	In the marketplace search and select **SARIF SANST Scans** extension.
+2. In the marketplace search and select **SARIF SANST Scans** extension.
 
-     ![](images/m3-img16.png)
+      ![](images/m3-img16.png)
 
-3.	Next click on **Get it free**.
+3. Next click on **Get it free**.
 
-     ![](images/m3-img17.png)
+      ![](images/m3-img17.png)
 
 4. Choose your **Organization (1)** from the dropdown menu, select **Install (2)**.
 

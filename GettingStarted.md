@@ -5,13 +5,12 @@
 1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the lab guide bottom area to switch to different exercises of the lab guide.
    
 
-   ![](media/img-1.png "Lab Environment")
+   ![](images/img-1.png "Lab Environment")
 
 1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be emailed to your email address provided during registration. You can also open the Lab Guide on a separate and full window by selecting the **Split Window** from the lower right corner. Also, you can start, stop, and restart virtual machines from the **Resources** tab.
 
-   ![](media/img-2.png "Lab Environment")
+   ![](images/img-2.png "Lab Environment")
  
-    > You will see the SUFFIX value on the **Environment Details** tab, use it wherever you see SUFFIX or Deployment ID in lab steps.
 
 
 ## Login to Azure Portal

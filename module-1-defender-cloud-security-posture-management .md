@@ -111,7 +111,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
 10.	Explore your Environment for Storage Accounts with a Sensitive Data. Change the condition to **Data (1)** and click on **Contains sensitive data (2)**.
 
-      ![](images/m1-img18.png)
+    ![](images/m1-img18.png)
 
 
  

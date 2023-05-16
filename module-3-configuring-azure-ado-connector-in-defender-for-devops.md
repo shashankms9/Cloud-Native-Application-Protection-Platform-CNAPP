@@ -130,13 +130,26 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img50.png)
 
-4. In the same page, enter the following username and password for **VMSS** and click **Review + create (4)**.
+4. In the same page, enter the following username and password for **VMSS** and click **Networking** tab.
 
     - **Username**: demouser
     - **Password**: demo!pass123
     - **Confirm password**: demo!pass123
 
-     ![](images/m3-img24.png)
+     ![](images/m3-img24.1.png)
+
+5. In the Networking tab, click on **Edit** under **Network Interface**.
+
+     ![](images/m3-img53.png)
+
+6. In **Edit Network Interface** tab set the toggle button to **Enabled** for **Public IP address (1)** and click on **OK**.
+
+     ![](images/m3-img54.png)
+
+7. Once you are back in the Netowking tab click **Review + Create**.
+
+     ![](images/m3-img55.png)
+
 5. In the next page you should see that all validation has passed and you can click **Create** button. The deployment will take some minutes to finish.
 
      ![](images/m3-img51.1.png)
@@ -174,9 +187,9 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img33.png)
 
-14. Enter `1` under **Maximum number of virtual machines in the scale set (1)** and **Number of agents to keep on standby (2)** fields then click **Create (3)**.
+14. Enter `1` under **Maximum number of virtual machines in the scale set (1)** and **Number of agents to keep on standby (2)** fields then check the box next to **Grant access permission to all pipelines (3)** and click **Create (4)**.
 
-     ![](images/m3-img34.png)
+     ![](images/m3-img52.png)
 
 16. In the **Agent pools** page you can view newly created pool.
 

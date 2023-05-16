@@ -5,11 +5,27 @@ This exercise guides you on how to validate and use Defender for Containers.
 
 ### Exercise 1: Verify Docker Installation
 
- 1. Search for PowerShell in Search bar and select **Windows PowerShell**.
+1. From the **Virtual Machine** desktop click on **Docker**.
+ 
+    ![](images/m2-img1.png)
+
+2. Click **Accept** on **Docker Subscription Service Agreement**.
+
+    ![](images/m2-img2.png)
+
+3. Next, Click on **Skip**.
+
+    ![](images/m2-img3.png)
+
+4. Wait for the Docker Engine to start. 
+
+    ![](images/m2-img4.png)
+    
+5. Search for PowerShell in Search bar and select **Windows PowerShell**.
 
    ![Open Powershell](images/open-powershell.png)
 
-2. Verify your docker version by executing in PowerShell 
+6. Verify your docker version by executing in PowerShell 
 
    ```
    docker version

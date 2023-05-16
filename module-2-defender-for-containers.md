@@ -17,7 +17,7 @@ This exercise guides you on how to validate and use Defender for Containers.
 
     ![](images/m2-img3.png)
 
-4. Wait for the Docker Engine to start. 
+4. Wait for the **Docker Engine** to start. 
 
     ![](images/m2-img4.png)
     

@@ -139,7 +139,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
      ![](images/m3-img24.png)
 5. In the next page you should see that all validation has passed and you can click **Create** button. The deployment will take some minutes to finish.
 
-     ![](images/m3-img51.png)
+     ![](images/m3-img51.1.png)
 
 6. Once the deployment is finished, click **Go to resource** button.
 

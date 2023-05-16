@@ -126,9 +126,9 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img22.png)
 
-3. In the Create a virtual machine scale set page, select your **Subscription (1)**, select **asclab (2)** resource group, provide the **Virtual machine scale set name** as `build-agent` **(3)**, for **Region** select **<inject key="Resource group Location" enableCopy="false" /> (4)**, leave all other options as is and change the image to **Windows Server 2022 Datacenter: Azure Edition Core - x64 Gen2 (5)**.
+3. In the Create a virtual machine scale set page, select your **Subscription (1)**, select **asclab (2)** resource group, provide the **Virtual machine scale set name** as `build-agent` **(3)**, for **Region** select **<inject key="Resource group Location" enableCopy="false" /> (4)**, for **Orchestration mode** select **Uniform (5)** leave all other options as is and change the image to **Windows Server 2022 Datacenter: Azure Edition Core - x64 Gen2 (6)**.
 
-     ![](images/m3-img23.png)
+     ![](images/m3-img50.png)
 
 4. In the same page, enter the following username and password for **VMSS** and click **Review + create (4)**.
 
@@ -139,7 +139,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
      ![](images/m3-img24.png)
 5. In the next page you should see that all validation has passed and you can click **Create** button. The deployment will take some minutes to finish.
 
-     ![](images/m3-img25.png)
+     ![](images/m3-img51.png)
 
 6. Once the deployment is finished, click **Go to resource** button.
 

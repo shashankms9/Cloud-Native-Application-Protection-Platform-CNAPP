@@ -226,7 +226,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/userpwd.png)
 
-27. Once you enter the remote session, search for _**powershell**_ in windows search and select **Powershell ISE**.
+27. Once you enter the remote session, search for **powershell** in windows search and select **Powershell ISE**.
 
      ![](images/powershellise.png)
 

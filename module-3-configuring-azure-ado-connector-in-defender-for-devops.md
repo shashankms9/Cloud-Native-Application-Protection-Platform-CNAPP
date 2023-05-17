@@ -144,7 +144,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
 6. In **Edit Network Interface** tab set the toggle button to **Enabled** for **Public IP address (1)** and click on **OK**.
 
-     ![](images/m3-img54.png)
+     ![](images/editnic.png)
 
 7. Once you are back in the Netowking tab click **Review + Create**.
 

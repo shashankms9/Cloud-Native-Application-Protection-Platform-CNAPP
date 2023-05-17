@@ -150,104 +150,104 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img55.png)
 
-5. In the next page you should see that all validation has passed and you can click **Create** button. The deployment will take some minutes to finish.
+8. In the next page you should see that all validation has passed and you can click **Create** button. The deployment will take some minutes to finish.
 
      ![](images/m3-img51.1.png)
 
-6. Once the deployment is finished, click **Go to resource** button.
+9. Once the deployment is finished, click **Go to resource** button.
 
      ![](images/m3-img26.png)
 
-7. In the **build-agent** page, click **Instances** option in the left. Confirm the build-agents are **Running**. 
+10. In the **build-agent** page, click **Instances** option in the left. Confirm the build-agents are **Running**. 
 
      ![](images/m3-img27.png)
 
-8.  Navigate to [Azure DevOps](https://dev.azure.com), in the main page, click on your **Project**.
+11. Navigate to [Azure DevOps](https://dev.azure.com), in the main page, click on your **Project**.
 
      ![](images/m3-img28.png)
 
 
-9. In the bottom of left navigation page, click **Project settings** option.
+12. In the bottom of left navigation page, click **Project settings** option.
 
      ![](images/m3-img29.png)
 
-10. In the left navigation page, under **Pipelines** section, click **Agent pools (1)** option. In the top corner of the right page, click **Add pool (2)** button.
+13. In the left navigation page, under **Pipelines** section, click **Agent pools (1)** option. In the top corner of the right page, click **Add pool (2)** button.
 
      ![](images/m3-img30.png)
 
-11. In the **Add agent pool** page, click the drop down list and select **Azure virtual machine scale set**.
+14. In the **Add agent pool** page, click the drop down list and select **Azure virtual machine scale set**.
 
      ![](images/m3-img31.png)
 
-12. Select your **subscription (1)** and click **Authorize (2)** button.
+15. Select your **subscription (1)** and click **Authorize (2)** button.
 
      ![](images/m3-img32.png)
 
-13. After the authorization is done, click on the virtual machine scale set drop down list and select **build-agent (1)**. Under the **Name** field, enter **windows-build-agents (2)**.
+16. After the authorization is done, click on the virtual machine scale set drop down list and select **build-agent (1)**. Under the **Name** field, enter **windows-build-agents (2)**.
 
      ![](images/m3-img33.png)
 
-14. Enter `1` under **Maximum number of virtual machines in the scale set (1)** and **Number of agents to keep on standby (2)** fields then check the box next to **Grant access permission to all pipelines (3)** and click **Create (4)**.
+17. Enter `1` under **Maximum number of virtual machines in the scale set (1)** and **Number of agents to keep on standby (2)** fields then check the box next to **Grant access permission to all pipelines (3)** and click **Create (4)**.
 
      ![](images/m3-img52.png)
 
-16. In the **Agent pools** page you can view newly created pool.
+18. In the **Agent pools** page you can view newly created pool.
 
      ![](images/m3-img35.png)
 
-17. Navigate back to **Azure Portal**, on the **VMSS** page click on **Instances (1)** from the left menu, select both the **Build Agents (2)** and click **Upgade (3)**.
+19. Navigate back to **Azure Portal**, on the **VMSS** page click on **Instances (1)** from the left menu, select both the **Build Agents (2)** and click **Upgade (3)**.
 
      ![](images/upgradeinst.png)
 
-18. Once the **Build agents** are upgraded, navigate to any of the build agent and click on **Serial console**.
+20. Once the **Build agents** are upgraded, navigate to any of the build agent and click on **Serial console**.
 
      ![](images/serialconsole.png)
 
-19. Enter the following commands, once the console is ready.
+21. Enter the following commands, once the console is ready.
 
-   ```
-   cmd
-   ```
+      ```
+      cmd
+      ```
    
-   ```
-   ch -si 1
-   ```
+      ```
+      ch -si 1
+      ```
      
-   ![](images/cmd.png)
+     ![](images/cmd.png)
 
-20. Next, enter the below credentials.
+22. Next, enter the below credentials.
 
     - **Username**: `demouser` 
     - **Domain**: click **Enter**
     - **Password**: `demo!pass123`
     
    
-   ![](images/cred.png)
+     ![](images/cred.png)
 
-21. On the next terminal enter `powershell`.
+23. On the next terminal enter `powershell`.
 
-   ![](images/powershell.png)
+     ![](images/powershell.png)
  
-22. Once you enter the powershell session, run the following commands to install ***nodejs***. 
+24. Once you enter the powershell session, run the following commands to install ***nodejs***. 
 
-   ```
-   $url = "https://nodejs.org/download/release/v16.8.0/node-v16.8.0-x64.msi"
-   $output = "C:\Users\TEMP\Downloads\node-v16.8.0-x64.msi"
-   $start_time = Get-Date
-   Invoke-WebRequest -Uri $url -OutFile $output
-   Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
-   $arguments = "/i `"C:\Users\TEMP\Downloads\node-v16.8.0-x64.msi`" /quiet"
-   Start-Process msiexec.exe -ArgumentList $arguments -Wait
-   sleep 5
-   ```
+      ```
+      $url = "https://nodejs.org/download/release/v16.8.0/node-v16.8.0-x64.msi"
+      $output = "C:\Users\TEMP\Downloads\node-v16.8.0-x64.msi"
+      $start_time = Get-Date
+      Invoke-WebRequest -Uri $url -OutFile $output
+      Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
+      $arguments = "/i `"C:\Users\TEMP\Downloads\node-v16.8.0-x64.msi`" /quiet"
+      Start-Process msiexec.exe -ArgumentList $arguments -Wait
+      sleep 5
+      ```
 
 23. After successfully installing ***nodejs***, run the `exit` command to go back to command promt.
 
 24. In the command promt, run the following npm command.
 
-   ```
-   npm.cmd install --loglevel error eslint@7.32.0 typescript@4.3.2 @microsoft/eslint-plugin-sdl@0.1.7 eslint-plugin-react@7.24.0 eslint-plugin-security@1.4.0 @typescript-eslint/typescript-estree@4.27.0 @typescript-eslint/parser@4.27.0 @typescript-eslint/eslint-plugin@4.27.0 @microsoft/eslint-formatter-sarif@2.1.5 eslint-plugin-node@11.1.0 --prefix C:\a\_msdo\packages\node_modules\eslint –global
-   ```
+      ```
+      npm.cmd install --loglevel error eslint@7.32.0 typescript@4.3.2 @microsoft/eslint-plugin-sdl@0.1.7 eslint-plugin-react@7.24.0 eslint-plugin-security@1.4.0 @typescript-eslint/typescript-estree@4.27.0 @typescript-eslint/parser@4.27.0 @typescript-eslint/eslint-plugin@4.27.0 @microsoft/eslint-formatter-sarif@2.1.5 eslint-plugin-node@11.1.0 --prefix C:\a\_msdo\packages\node_modules\eslint –global
+      ```
 
 ### Exercise 5: Configure your pipeline using YAML 
 

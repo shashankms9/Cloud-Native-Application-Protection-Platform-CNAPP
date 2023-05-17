@@ -5,7 +5,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 ### Exercise 1: Connecting your GitHub organization
 
-1. Next, Navigate github tab and go to repository **Settings (1)**, under **Actions (2)** select **General (3)** and set the **Workflow Permissions** to **Read and write permissions (4)** then click **Save (5)**.
+1. Navigate to github tab and go to repository **Settings (1)**, under **Actions (2)** select **General (3)** and set the **Workflow Permissions** to **Read and write permissions (4)** then click **Save (5)**.
 
       ![](images/m4-img18.png)
 

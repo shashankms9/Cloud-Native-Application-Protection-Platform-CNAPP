@@ -199,34 +199,19 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/upgradeinst.png)
 
-20. Once the **Build agents** are upgraded, navigate to any of the build agent and click on **Serial console**.
+20. Once the **Build agents** are upgraded, navigate to **build-agent_1** and click on **Networking (1)** and select **Add inbound port rule (2)**.
 
-     ![](images/serialconsole.png)
+     ![](images/addport.png)
 
-21. Enter the following commands, once the console is ready.
-
-      ```
-      cmd
-      ```
-   
-      ```
-      ch -si 1
-      ```
+21. Enter `3389` **(1)** under **Destination port range**, and click **Add (2)**.
      
-     ![](images/cmd.png)
+     ![](images/rdp.png)
 
-22. Next, enter the below credentials.
-
-    - **Username**: `demouser` 
-    - **Domain**: click **Enter**
-    - **Password**: `demo!pass123`
-    
+22. From the **Overview (1)** page copy the **Public IP address (2)**.
    
-     ![](images/cred.png)
+     ![](images/copyip.png)
 
-23. On the next terminal enter `powershell`.
-
-     ![](images/powershell.png)
+23.
  
 24. Once you enter the powershell session, run the following commands to install ***nodejs***. 
 
@@ -259,17 +244,25 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
 The purpose of this exercise is to allow you to see how the extension used by Defender for DevOps will check your pipeline.
 
-1.	Login to the [GitHub](https://github.com/), by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)** .
+1.	Login to the GitHub using the URL on the **Labvm**, by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)** .
 
-    ![](images/m4-img21.png)
+   ```
+   https://github.com/
+   ```
+   
+   ![](images/m4-img21.png)
 
 2. For Device Verification Code, use the same credentials as in the previous step, open http://outlook.office.com/ in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 
    ![](images/email-verify.png)
 
-3. Navigate to https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main **(1)** and click on **Fork (2)**.
-
-      ![](images/m4-img22.png)
+3. Navigate to following Git Repository **(1)** and click on **Fork (2)**.
+   
+      ```
+      https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main
+      ```
+     
+    ![](images/m4-img22.png)
 
 4. In **Create a new fork**, disable **Copy the main branch only (1)** and click **Create fork (1)**. 
 
@@ -279,7 +272,7 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
       ![](images/giturl.png)
 
-6. Login to the [Azure DevOps](https://dev.azure.com) and open your **Project**.
+6. Login to the **Azure DevOps**(https://dev.azure.com) and open your **Project**.
 
      ![](images/m3-img28.png)
 
@@ -337,26 +330,13 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
       ![](images/m3-img40.png)
 
-14. Click **View** on **"This pipeline needs permission to access a resource before this run can continue"** pop-up.
-
-      ![](images/m3-img41.png)
-
-15. On **Waiting for review page**, click on **Permit**.
-
-      ![](images/m3-img42.png)
-
-16. Next on **"Permit access?"** pop-up, click **Permit**.
-
-      ![](images/m3-img43.png)
-
-
     > **Note**: At this point the job will queue up to run. This step may take some time to spin up a build agent in the VMSS. During this time, if you go back to VMSS dashboard you will see that the instance is getting created
 
-17. In a few more minutes, the job will start to have some activity as shown the example below:
+14. In a few more minutes, the job will start to have some activity as shown the example below:
 
       ![](images/m3-img44.png)
 
-18. After it finishes you can see scan done by Defender for DevOps. To do that click **Microsoft Security DevOps** section in the left and you will see the output of the actions that were done as shown below:
+15. After it finishes you can see scan done by Defender for DevOps. To do that click **Microsoft Security DevOps** section in the left and you will see the output of the actions that were done as shown below:
 
       ![](images/m3-img45.png)
 

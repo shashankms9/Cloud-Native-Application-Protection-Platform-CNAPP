@@ -226,32 +226,38 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/userpwd.png)
 
-27. Once you enter the remote session, open powershell and run the following commands to install ***nodejs***. 
+27. Once you enter the remote session, search for _**powershell**_ in windows search and select **Powershell ISE**.
 
-      ```
-      $url = "https://nodejs.org/download/release/v16.8.0/node-v16.8.0-x64.msi"
-      $output = "C:\Users\TEMP\Downloads\node-v16.8.0-x64.msi"
-      $start_time = Get-Date
-      Invoke-WebRequest -Uri $url -OutFile $output
-      Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
-      $arguments = "/i `"C:\Users\TEMP\Downloads\node-v16.8.0-x64.msi`" /quiet"
-      Start-Process msiexec.exe -ArgumentList $arguments -Wait
-      sleep 5
+     ![](images/powershellise.png)
+
+28. Paste the following commands to install ***nodejs (1)*** and click on **Run (2)** button. 
+
+     ```
+    #Install nodejs v16.8.0
+    $WebClient = New-Object System.Net.WebClient
+    $WebClient.DownloadFile("https://nodejs.org/download/release/v16.8.0/node-v16.8.0-x64.msi","C:\node-v16.8.0-x64.msi")
+    $arguments = "/i `"C:\node-v16.8.0-x64.msi`" /quiet"
+    Start-Process msiexec.exe -ArgumentList $arguments -Wait
+    sleep 5
       ```
 
-     ![](images/nodejs.png)
+     ![](images/nodejs1.png)
      
-23. After successfully installing ***nodejs***, run the `exit` command to go back to command promt.
+29. Next, in the windows search bar type ***cmd*** and select **Command Prompt**.
 
-     ![](images/exit.png)
+     ![](images/cmd1.png)
 
-24. In the command promt, run the following npm command.
+30. In the command promt, run the following npm command.
 
       ```
       npm.cmd install --loglevel error eslint@7.32.0 typescript@4.3.2 @microsoft/eslint-plugin-sdl@0.1.7 eslint-plugin-react@7.24.0 eslint-plugin-security@1.4.0 @typescript-eslint/typescript-estree@4.27.0 @typescript-eslint/parser@4.27.0 @typescript-eslint/eslint-plugin@4.27.0 @microsoft/eslint-formatter-sarif@2.1.5 eslint-plugin-node@11.1.0 --prefix C:\a\_msdo\packages\node_modules\eslint –global
       ```
      
-     ![](images/npm.png)
+     ![](images/npm1.png)
+
+31. Close the **RDP** session by clicking **X**.
+
+     ![](images/close.png)
 
 ### Exercise 5: Configure your pipeline using YAML 
 

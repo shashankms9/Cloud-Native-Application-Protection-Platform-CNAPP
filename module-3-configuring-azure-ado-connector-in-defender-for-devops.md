@@ -265,9 +265,9 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
 1.	Login to the GitHub using the URL on the **Labvm**, by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)** .
 
-   ```
-   https://github.com/
-   ```
+      ```
+      https://github.com/
+      ```
 
       ![](images/m4-img21.png)
 

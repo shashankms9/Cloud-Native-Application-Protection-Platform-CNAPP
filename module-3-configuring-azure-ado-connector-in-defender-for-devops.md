@@ -268,8 +268,8 @@ The purpose of this exercise is to allow you to see how the extension used by De
    ```
    https://github.com/
    ```
-   
-   ![](images/m4-img21.png)
+
+      ![](images/m4-img21.png)
 
 2. For Device Verification Code, use the same credentials as in the previous step, open http://outlook.office.com/ in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 

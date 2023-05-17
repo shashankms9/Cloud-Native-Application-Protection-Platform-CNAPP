@@ -207,13 +207,26 @@ In order to view the scan results (when you execute the pipelines), in an easier
      
      ![](images/rdp.png)
 
-22. From the **Overview (1)** page copy the **Public IP address (2)**.
+22. From the **Overview (1)** page copy the **Public IP address (2)** and paste in a text editor like ***Notepad***.
    
      ![](images/copyip.png)
 
-23.
+23. On your **Labvm**, search for **rdp** in windows search and select **Remote Desktop Connection**.
+
+     ![](images/rdplog.png)
  
-24. Once you enter the powershell session, run the following commands to install ***nodejs***. 
+24. Enter IP you copied earlier and click **Connect**.
+
+     ![](images/ip.png)
+
+25. Enter the following cerdentials and click **OK**.
+
+    - **Username**: `.\demouser` 
+    - **Password**: `demo!pass123`
+
+     ![](images/userpwd.png)
+
+27. Once you enter the remote session, open powershell and run the following commands to install ***nodejs***. 
 
       ```
       $url = "https://nodejs.org/download/release/v16.8.0/node-v16.8.0-x64.msi"

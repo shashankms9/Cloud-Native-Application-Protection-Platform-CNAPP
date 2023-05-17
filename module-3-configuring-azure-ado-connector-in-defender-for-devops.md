@@ -255,7 +255,7 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
 1.	Login to the [GitHub](https://github.com/), by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)** .
 
-   ![](images/m4-img21.png)
+    ![](images/m4-img21.png)
 
 2. For Device Verification Code, use the same credentials as in the previous step, open http://outlook.office.com/ in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 
@@ -299,33 +299,33 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
 12. In the **Configure your pipeline** page, replace the **YAML code (1)** for the one below and click **Save and run (2)** :
 
-   ```
-   # Starter pipeline
-   # Start with a minimal pipeline that you can customize to build and deploy your code.
-   # Add steps that build, run tests, deploy, and more:
-   # https://aka.ms/yaml
-   trigger: none
-   pool: windows-build-agents
-   steps:
-   - task: UseDotNet@2
-     displayName: 'Use dotnet'
-     inputs:
-       version: 3.1.x
-   - task: UseDotNet@2
-     displayName: 'Use dotnet'
-     inputs:
-       version: 5.0.x
-   - task: UseDotNet@2
-     displayName: 'Use dotnet'
-     inputs:
-       version: 6.0.x
-   - task: MicrosoftSecurityDevOps@1
-     displayName: 'Microsoft Security DevOps'
-   ```
+      ```
+      # Starter pipeline
+      # Start with a minimal pipeline that you can customize to build and deploy your code.
+      # Add steps that build, run tests, deploy, and more:
+      # https://aka.ms/yaml
+      trigger: none
+      pool: windows-build-agents
+      steps:
+      - task: UseDotNet@2
+        displayName: 'Use dotnet'
+        inputs:
+          version: 3.1.x
+      - task: UseDotNet@2
+        displayName: 'Use dotnet'
+        inputs:
+          version: 5.0.x
+      - task: UseDotNet@2
+        displayName: 'Use dotnet'
+        inputs:
+          version: 6.0.x
+      - task: MicrosoftSecurityDevOps@1
+        displayName: 'Microsoft Security DevOps'
+      ```
      
-   ![](images/m3-img39.png)
+      ![](images/m3-img39.png)
 
-   > **Note**: Observe that the pool is pointing to windows-build-agents, which is the VMSS that you created.
+      > **Note**: Observe that the pool is pointing to windows-build-agents, which is the VMSS that you created.
 
 13. Click **Save and run** button again.
 
@@ -344,7 +344,7 @@ The purpose of this exercise is to allow you to see how the extension used by De
       ![](images/m3-img43.png)
 
 
-   > **Note**: At this point the job will queue up to run. This step may take some time to spin up a build agent in the VMSS. During this time, if you go back to VMSS dashboard you will see that the instance is getting created
+    > **Note**: At this point the job will queue up to run. This step may take some time to spin up a build agent in the VMSS. During this time, if you go back to VMSS dashboard you will see that the instance is getting created
 
 17. In a few more minutes, the job will start to have some activity as shown the example below:
 

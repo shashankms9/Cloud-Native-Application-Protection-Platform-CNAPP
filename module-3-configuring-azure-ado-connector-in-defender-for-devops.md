@@ -199,76 +199,104 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
 The purpose of this exercise is to allow you to see how the extension used by Defender for DevOps will check your pipeline.
 
-1. Login to the [Azure DevOps](https://dev.azure.com) and open your **Project**.
+1.	Login to the [GitHub](https://github.com/), by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)** .
+
+   ![](images/m4-img21.png)
+
+2. For Device Verification Code, use the same credentials as in the previous step, open http://outlook.office.com/ in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
+
+   ![](images/email-verify.png)
+
+3. Navigate to https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main **(1)** and click on **Fork (2)**.
+
+      ![](images/m4-img22.png)
+
+4. In **Create a new fork**, disable **Copy the main branch only (1)** and click **Create fork (1)**. 
+
+      ![](images/m4-img23.png)
+
+5. Once the repository is forked click on **Code (1)** and copy the **URL (2)**. Paste into any text editor like *Notepad*.
+
+      ![](images/giturl.png)
+
+6. Login to the [Azure DevOps](https://dev.azure.com) and open your **Project**.
 
      ![](images/m3-img28.png)
 
-2. In the left navigation pane, click **Pipelines (1)**. In the right pane, click **Create Pipeline (2)** button.
+7. From the left pane, click on **Repos (1)** and click **Import (2)** under **Import a repository**.
+
+     ![](images/importrepo.png)
+
+8. On the **Import a Git repository** pane, for **Clone URL (1)** paste the **URL** you copied the the previous, then click **Import (2)**.
+
+     ![](images/gitimport.png)
+
+9. Next, in the left navigation pane, click **Pipelines (1)**. In the right pane, click **Create Pipeline (2)** button.
 
      ![](images/m3-img36.png)
 
-3. In the **Where is your code?** page, click **Azure Repos Git**.
+10. In the **Where is your code?** page, click **Azure Repos Git**.
 
      ![](images/m3-img37.png)
 
-4. Click on the exisiting **Repository**.
+11. Click on the exisiting **Repository**.
 
      ![](images/m3-img38.png)
 
-5. In the **Configure your pipeline** page, replace the **YAML code (1)** for the one below and click **Save and run (2)** :
+12. In the **Configure your pipeline** page, replace the **YAML code (1)** for the one below and click **Save and run (2)** :
 
-```
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-trigger: none
-pool: windows-build-agents
-steps:
-- task: UseDotNet@2
-  displayName: 'Use dotnet'
-  inputs:
-    version: 3.1.x
-- task: UseDotNet@2
-  displayName: 'Use dotnet'
-  inputs:
-    version: 5.0.x
-- task: UseDotNet@2
-  displayName: 'Use dotnet'
-  inputs:
-    version: 6.0.x
-- task: MicrosoftSecurityDevOps@1
-  displayName: 'Microsoft Security DevOps'
-```
+   ```
+   # Starter pipeline
+   # Start with a minimal pipeline that you can customize to build and deploy your code.
+   # Add steps that build, run tests, deploy, and more:
+   # https://aka.ms/yaml
+   trigger: none
+   pool: windows-build-agents
+   steps:
+   - task: UseDotNet@2
+     displayName: 'Use dotnet'
+     inputs:
+       version: 3.1.x
+   - task: UseDotNet@2
+     displayName: 'Use dotnet'
+     inputs:
+       version: 5.0.x
+   - task: UseDotNet@2
+     displayName: 'Use dotnet'
+     inputs:
+       version: 6.0.x
+   - task: MicrosoftSecurityDevOps@1
+     displayName: 'Microsoft Security DevOps'
+   ```
      
    ![](images/m3-img39.png)
 
    > **Note**: Observe that the pool is pointing to windows-build-agents, which is the VMSS that you created.
 
-6. Click **Save and run** button again.
+13. Click **Save and run** button again.
 
       ![](images/m3-img40.png)
 
-7. Click **View** on **"This pipeline needs permission to access a resource before this run can continue"** pop-up.
+14. Click **View** on **"This pipeline needs permission to access a resource before this run can continue"** pop-up.
 
       ![](images/m3-img41.png)
 
-8. On **Waiting for review page**, click on **Permit**.
+15. On **Waiting for review page**, click on **Permit**.
 
       ![](images/m3-img42.png)
 
-9. Next on **"Permit access?"** pop-up, click **Permit**.
+16. Next on **"Permit access?"** pop-up, click **Permit**.
 
       ![](images/m3-img43.png)
 
 
    > **Note**: At this point the job will queue up to run. This step may take some time to spin up a build agent in the VMSS. During this time, if you go back to VMSS dashboard you will see that the instance is getting created
 
-9. In a few more minutes, the job will start to have some activity as shown the example below:
+17. In a few more minutes, the job will start to have some activity as shown the example below:
 
       ![](images/m3-img44.png)
 
-10. After it finishes you can see scan done by Defender for DevOps. To do that click **Microsoft Security DevOps** section in the left and you will see the output of the actions that were done as shown below:
+18. After it finishes you can see scan done by Defender for DevOps. To do that click **Microsoft Security DevOps** section in the left and you will see the output of the actions that were done as shown below:
 
       ![](images/m3-img45.png)
 

@@ -263,7 +263,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
 The purpose of this exercise is to allow you to see how the extension used by Defender for DevOps will check your pipeline.
 
-1.	Login to the GitHub using the URL on the **Labvm**, by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)** .
+1.	Login to the GitHub using the URL on the **Labvm**, by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)**.
 
       ```
       https://github.com/

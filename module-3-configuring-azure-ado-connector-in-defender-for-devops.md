@@ -26,11 +26,11 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
     ![](images/m3-img48.png)
 
-5. Go to **Azure Portal**, navigate to **Microsoft Defender for Cloud**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (preview) (3)** option. 
+5. Navigate to **Microsoft Defender for Cloud** on the **Azure Portal**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (preview) (3)** option. 
 
     ![](images/m3-img1.png)
 
-6. Enter the **Name** for the connector `CNAPP-Devops` **(1)**, select your **Subscription (2)**, select **asclab (3)** resource group, select any **Region (3)**. Select **Next : Select plans > (5)**.
+6. Enter the **Name** for the connector as `CNAPP-Devops` **(1)**, select your **Subscription (2)**, select **asclab (3)** resource group, select any **Region (3)**. Select **Next : Select plans > (5)**.
 
     ![](images/m3-img2.png)
 
@@ -142,23 +142,23 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img53.png)
 
-6. In **Edit Network Interface** tab set the toggle button to **Enabled** for **Public IP address (1)** and click on **OK**.
+6. In **Edit Network Interface** tab, set the toggle button to **Enabled** for **Public IP address (1)** and click on **OK**.
 
      ![](images/editnic.png)
 
-7. Once you are back in the Netowking tab click **Review + Create**.
+7. Once you are back on the **Netowking** tab click **Review + Create**.
 
      ![](images/m3-img55.png)
 
-8. In the next page you should see that all validation has passed and you can click **Create** button. The deployment will take some minutes to finish.
+8. In the next page, you should see that all the validation are passed and now you can click **Create** button. The deployment will take a few minutes to complete.
 
      ![](images/m3-img51.1.png)
 
-9. Once the deployment is finished, click **Go to resource** button.
+9. Once the deployment is completed, click on **Go to resource** button.
 
      ![](images/m3-img26.png)
 
-10. In the **build-agent** page, click **Instances** option in the left. Confirm the build-agents are **Running**. 
+10. In the **build-agent** page, click on **Instances** option in the left. Confirm that the build-agents are **Running**. 
 
      ![](images/m3-img27.png)
 
@@ -171,11 +171,11 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img29.png)
 
-13. In the left navigation page, under **Pipelines** section, click **Agent pools (1)** option. In the top corner of the right page, click **Add pool (2)** button.
+13. In the left navigation page, under **Pipelines** section, click **Agent pools (1)** option. From the top right corner of the page, click **Add pool (2)** button.
 
      ![](images/m3-img30.png)
 
-14. In the **Add agent pool** page, click the drop down list and select **Azure virtual machine scale set**.
+14. In the **Add agent pool** page, click on the drop down list and select **Azure virtual machine scale set**.
 
      ![](images/m3-img31.png)
 
@@ -207,7 +207,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
      
      ![](images/rdp.png)
 
-22. From the **Overview (1)** page copy the **Public IP address (2)** and paste in a text editor like ***Notepad***.
+22. From the **Overview (1)** page, copy the **Public IP address (2)** and paste in a text editor like ***Notepad***.
    
      ![](images/copyip.png)
 
@@ -215,7 +215,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/rdplog.png)
  
-24. Enter IP you copied earlier and click **Connect**.
+24. Enter the **IP** you copied earlier and click **Connect**.
 
      ![](images/ip.png)
 
@@ -255,7 +255,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
      
      ![](images/npm1.png)
 
-31. Close the **RDP** session by clicking **X**.
+31. Close the **RDP** session by clicking on **X**.
 
      ![](images/close.png)
 
@@ -345,7 +345,7 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
       > **Note**: Observe that the pool is pointing to windows-build-agents, which is the VMSS that you created.
 
-13. Click **Save and run** button again.
+13. Click the **Save and run** button again.
 
       ![](images/m3-img40.png)
 
@@ -355,7 +355,7 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
       ![](images/m3-img44.png)
 
-15. After it finishes you can see scan done by Defender for DevOps. To do that click **Microsoft Security DevOps** section in the left and you will see the output of the actions that were done as shown below:
+15. Once it finishes you can see scan done by Defender for DevOps. To do that click **Microsoft Security DevOps** section in the left and you will see the output of the actions that were done as shown below:
 
       ![](images/m3-img45.png)
 

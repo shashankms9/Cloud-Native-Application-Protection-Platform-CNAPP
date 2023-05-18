@@ -222,42 +222,42 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/close.png)
 
-22. Navigate back to **Azure Portal**, on the **VMSS** page click on **Instances (1)** from the left menu, select both the **Build Agents (2)** and click **Upgade (3)**.
-
-     ![](images/upgradeinst.png)
-
-23. Navigate to [Azure DevOps](https://dev.azure.com), in the main page, click on your **Project**.
+22. Navigate to [Azure DevOps](https://dev.azure.com), in the main page, click on your **Project**.
 
      ![](images/m3-img28.png)
 
 
-24. In the bottom of left navigation page, click **Project settings** option.
+23. In the bottom of left navigation page, click **Project settings** option.
 
      ![](images/m3-img29.png)
 
-25. In the left navigation page, under **Pipelines** section, click **Agent pools (1)** option. From the top right corner of the page, click **Add pool (2)** button.
+24. In the left navigation page, under **Pipelines** section, click **Agent pools (1)** option. From the top right corner of the page, click **Add pool (2)** button.
 
      ![](images/m3-img30.png)
 
-26. In the **Add agent pool** page, click on the drop down list and select **Azure virtual machine scale set**.
+25. In the **Add agent pool** page, click on the drop down list and select **Azure virtual machine scale set**.
 
      ![](images/m3-img31.png)
 
-27. Select your **subscription (1)** and click **Authorize (2)** button.
+26. Select your **subscription (1)** and click **Authorize (2)** button.
 
      ![](images/m3-img32.png)
 
-28. After the authorization is done, click on the virtual machine scale set drop down list and select **build-agent (1)**. Under the **Name** field, enter **windows-build-agents (2)**.
+27. After the authorization is done, click on the virtual machine scale set drop down list and select **build-agent (1)**. Under the **Name** field, enter **windows-build-agents (2)**.
 
      ![](images/m3-img33.png)
 
-29. Enter `1` under **Maximum number of virtual machines in the scale set (1)** and **Number of agents to keep on standby (2)** fields then check the box next to **Grant access permission to all pipelines (3)** and click **Create (4)**.
+28. Enter `1` under **Maximum number of virtual machines in the scale set (1)** and **Number of agents to keep on standby (2)** fields then check the box next to **Grant access permission to all pipelines (3)** and click **Create (4)**.
 
      ![](images/m3-img52.png)
 
-30. In the **Agent pools** page you can view newly created pool.
+29. In the **Agent pools** page you can view newly created pool.
 
      ![](images/m3-img35.png)
+
+30. Navigate back to **Azure Portal**, on the **VMSS** page click on **Instances (1)** from the left menu, select both the **Build Agents (2)** and click **Upgade (3)**.
+
+     ![](images/upgradeinst.png)
 
 ### Exercise 5: Configure your pipeline using YAML 
 

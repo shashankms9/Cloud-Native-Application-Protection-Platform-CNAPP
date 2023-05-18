@@ -162,7 +162,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img27.png)
 
-11. Once the **Build agents** are upgraded, navigate to **build-agent_1** and click on **Networking (1)** and select **Add inbound port rule (2)**.
+11. Navigate to **build-agent_1** and click on **Networking (1)** and select **Add inbound port rule (2)**.
 
      ![](images/addport.png)
 

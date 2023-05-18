@@ -29,11 +29,11 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
       ![](images/m1-img2.png)
 
-3. In the **Defender plans** page, select **Defender CSPM** turn the status to **ON (1)** and select **Settings & monitoring (2)**.
+3. In the **Defender plans** page, select **Defender CSPM** turn the status to **On (1)** and select **Settings & monitoring (2)**.
 
       ![](images/m1-img3.png)
 
-4. Turn **ON (1)** the **Agentless scanning for machines (preview)** and click **Continue (2)**.
+4. Turn **On (1)** the **Agentless scanning for machines (preview)** and click **Continue (2)**.
 
       ![](images/m1-img4.png)
 
@@ -49,17 +49,17 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
       ![](images/m1-img13.1.png)
 
-2.	Click on **Attack path**. You will find the Attack Paths in your Environment. 
+2. Click on **Attack path**. You will find the Attack Paths in your Environment. 
 
-3.	Click on **“Internet exposed VM has High severity vulnerabilities and read permission to key vault”**
+3. Click on **“Internet exposed VM has High severity vulnerabilities and read permission to key vault”**
 
       ![](images/m1-img14.png)
  
-4.	You can observe the Attack path and the resources involved in the attack path.
+4. You can observe the Attack path and the resources involved in the attack path.
 
-5.	Remediate the recommendations to resolve the attack path 
+5. Remediate the recommendations to resolve the attack path 
 
-6.	Explore the rest of the Attack paths found in your Environment and remidiate
+6. Explore the rest of the Attack paths found in your Environment and remidiate
 
 ## Exercise 3: Build query with Cloud Security Explorer
 

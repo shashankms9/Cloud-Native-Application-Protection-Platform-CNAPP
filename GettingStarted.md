@@ -18,16 +18,14 @@
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser from the desktop.
 
    ![](images/img-3.png "Lab Environment")
-
-1. In the Welcome to Microsoft Edge page, select **Start without your data**, and on the help for importing Google browsing data page select **Continue without this data** button and proceed to select **Confirm and start browsing** on the next page.
    
 1. On the **Sign in to Microsoft Azure** tab you will see a login screen, enter the following email/username and then click on **Next**. 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * Email/Username: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
    
      ![](images/image7.png "Enter Email")
      
 1. Now enter the following password and click on **Sign in**.
-   * Password: <inject key="AzureAdUserPassword"></inject>
+   * Password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
    
      ![](images/image8.png "Enter Password")
      

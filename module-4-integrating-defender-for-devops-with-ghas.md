@@ -32,7 +32,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
       ![](images/m4-img5.png)
 
-7. Now Click **Install** button under **Install Defender for DevOps app**. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask you confirmation of which repository you'd like to install the app. Select your **Github repository**. 
+7. Now click **Install** button under **Install Defender for DevOps app**. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask you confirmation of which repository you'd like to install the app. Select your **Github repository**. 
 
       ![](images/m4-img6.png)
   
@@ -50,7 +50,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
       ![](images/m4-img10.png)
 
-11. Navigating to the **Environment Settings** under **Microsoft Defender for Cloud**, you’ll notice the GitHub Connection was successfully created. 
+11. Navigating to the **Environment Settings** under **Microsoft Defender for Cloud**, you’ll notice the ***GitHub*** Connection was successfully created. 
 
       ![](images/m4-img11.png)
 
@@ -115,7 +115,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
    
       ![](images/m4-img27.png)
 
-5.	Click on **Commit Changes** and click **Commit Changes** again on 
+5.	Click on **Commit Changes** and click **Commit Changes** again. 
 
       ![](images/m4-img14.png)
 
@@ -128,4 +128,4 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 7.	Once this job completes running, navigate to the **Security (1)** tab and click on **Code scanning (2)**. Code scanning findings will be filtered by specific MSDO tools in GitHub.
 
       ![](images/m4-img28.png)
-a
+

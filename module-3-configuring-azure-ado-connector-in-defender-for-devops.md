@@ -162,75 +162,38 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img27.png)
 
-11. Navigate to [Azure DevOps](https://dev.azure.com), in the main page, click on your **Project**.
-
-     ![](images/m3-img28.png)
-
-
-12. In the bottom of left navigation page, click **Project settings** option.
-
-     ![](images/m3-img29.png)
-
-13. In the left navigation page, under **Pipelines** section, click **Agent pools (1)** option. From the top right corner of the page, click **Add pool (2)** button.
-
-     ![](images/m3-img30.png)
-
-14. In the **Add agent pool** page, click on the drop down list and select **Azure virtual machine scale set**.
-
-     ![](images/m3-img31.png)
-
-15. Select your **subscription (1)** and click **Authorize (2)** button.
-
-     ![](images/m3-img32.png)
-
-16. After the authorization is done, click on the virtual machine scale set drop down list and select **build-agent (1)**. Under the **Name** field, enter **windows-build-agents (2)**.
-
-     ![](images/m3-img33.png)
-
-17. Enter `1` under **Maximum number of virtual machines in the scale set (1)** and **Number of agents to keep on standby (2)** fields then check the box next to **Grant access permission to all pipelines (3)** and click **Create (4)**.
-
-     ![](images/m3-img52.png)
-
-18. In the **Agent pools** page you can view newly created pool.
-
-     ![](images/m3-img35.png)
-
-19. Navigate back to **Azure Portal**, on the **VMSS** page click on **Instances (1)** from the left menu, select both the **Build Agents (2)** and click **Upgade (3)**.
-
-     ![](images/upgradeinst.png)
-
-20. Once the **Build agents** are upgraded, navigate to **build-agent_1** and click on **Networking (1)** and select **Add inbound port rule (2)**.
+11. Once the **Build agents** are upgraded, navigate to **build-agent_1** and click on **Networking (1)** and select **Add inbound port rule (2)**.
 
      ![](images/addport.png)
 
-21. Enter `3389` **(1)** under **Destination port range**, and click **Add (2)**.
+12. Enter `3389` **(1)** under **Destination port range**, and click **Add (2)**.
      
      ![](images/rdp.png)
 
-22. From the **Overview (1)** page, copy the **Public IP address (2)** and paste in a text editor like ***Notepad***.
+13. From the **Overview (1)** page, copy the **Public IP address (2)** and paste in a text editor like ***Notepad***.
    
      ![](images/copyip.png)
 
-23. On your **Labvm**, search for **rdp** in windows search and select **Remote Desktop Connection**.
+14. On your **Labvm**, search for **rdp** in windows search and select **Remote Desktop Connection**.
 
      ![](images/rdplog.png)
  
-24. Enter the **IP** you copied earlier and click **Connect**.
+15. Enter the **IP** you copied earlier and click **Connect**.
 
      ![](images/ip.png)
 
-25. Enter the following cerdentials and click **OK**.
+16. Enter the following cerdentials and click **OK**.
 
     - **Username**: `.\demouser` 
     - **Password**: `demo!pass123`
 
      ![](images/userpwd.png)
 
-27. Once you enter the remote session, search for **powershell** in windows search and select **Powershell ISE**.
+17. Once you enter the remote session, search for **powershell** in windows search and select **Powershell ISE**.
 
      ![](images/powershellise.png)
 
-28. Paste the following commands to install ***nodejs (1)*** and click on **Run (2)** button. 
+18. Paste the following commands to install ***nodejs (1)*** and click on **Run (2)** button. 
 
      ```
     #Install nodejs v16.8.0
@@ -243,11 +206,11 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/nodejs1.png)
      
-29. Next, in the windows search bar type ***cmd*** and select **Command Prompt**.
+19. Next, in the windows search bar type ***cmd*** and select **Command Prompt**.
 
      ![](images/cmd1.png)
 
-30. In the command promt, run the following npm command.
+20. In the command promt, run the following npm command.
 
       ```
       npm.cmd install --loglevel error eslint@7.32.0 typescript@4.3.2 @microsoft/eslint-plugin-sdl@0.1.7 eslint-plugin-react@7.24.0 eslint-plugin-security@1.4.0 @typescript-eslint/typescript-estree@4.27.0 @typescript-eslint/parser@4.27.0 @typescript-eslint/eslint-plugin@4.27.0 @microsoft/eslint-formatter-sarif@2.1.5 eslint-plugin-node@11.1.0 --prefix C:\a\_msdo\packages\node_modules\eslint –global
@@ -255,9 +218,46 @@ In order to view the scan results (when you execute the pipelines), in an easier
      
      ![](images/npm1.png)
 
-31. Close the **RDP** session by clicking on **X**.
+21. Close the **RDP** session by clicking on **X**.
 
      ![](images/close.png)
+
+22. Navigate back to **Azure Portal**, on the **VMSS** page click on **Instances (1)** from the left menu, select both the **Build Agents (2)** and click **Upgade (3)**.
+
+     ![](images/upgradeinst.png)
+
+23. Navigate to [Azure DevOps](https://dev.azure.com), in the main page, click on your **Project**.
+
+     ![](images/m3-img28.png)
+
+
+24. In the bottom of left navigation page, click **Project settings** option.
+
+     ![](images/m3-img29.png)
+
+25. In the left navigation page, under **Pipelines** section, click **Agent pools (1)** option. From the top right corner of the page, click **Add pool (2)** button.
+
+     ![](images/m3-img30.png)
+
+26. In the **Add agent pool** page, click on the drop down list and select **Azure virtual machine scale set**.
+
+     ![](images/m3-img31.png)
+
+27. Select your **subscription (1)** and click **Authorize (2)** button.
+
+     ![](images/m3-img32.png)
+
+28. After the authorization is done, click on the virtual machine scale set drop down list and select **build-agent (1)**. Under the **Name** field, enter **windows-build-agents (2)**.
+
+     ![](images/m3-img33.png)
+
+29. Enter `1` under **Maximum number of virtual machines in the scale set (1)** and **Number of agents to keep on standby (2)** fields then check the box next to **Grant access permission to all pipelines (3)** and click **Create (4)**.
+
+     ![](images/m3-img52.png)
+
+30. In the **Agent pools** page you can view newly created pool.
+
+     ![](images/m3-img35.png)
 
 ### Exercise 5: Configure your pipeline using YAML 
 

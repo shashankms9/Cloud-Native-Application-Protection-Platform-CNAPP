@@ -9,8 +9,8 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
 1. Navigate to [Azure DevOps](https://dev.azure.com) and login using the following credentials:
 
-    * Email: <inject key="AzureAdUserEmail"></inject>
-    * Password: <inject key="AzureAdUserPassword"></inject>
+    * Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
+    * Password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
 
 2. Click on **Organization settings**. 
 

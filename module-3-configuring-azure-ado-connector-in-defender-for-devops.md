@@ -22,7 +22,7 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
     ![](images/m3-img47.png)
 
-4. Click on **Azure Devops (1)** to navigate back to the home page. In the **Create a project to get started** pane, enter the **Project name** as **ODL_User_ <inject key="DeploymentID" enableCopy="false" /> (2)** set **Visibility** to **Public (3)** and click **+ Create project (4)**. 
+4. Click on **Azure Devops (1)** to navigate back to the home page. In the **Create a project to get started** pane, enter the **Project name** as **ODL_User_xxxx (2)** set **Visibility** to **Public (3)** and click **+ Create project (4)**. 
 
     ![](images/m3-img48.png)
 
@@ -46,7 +46,7 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
    > **Note**: When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
 
-9. After the authorization is complete, select your Azure ADO organization **odluser<inject key="DeploymentID" enableCopy="false" /></inject> (1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
+9. After the authorization is complete, select your Azure ADO organization **odluserxxxx(1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
 
       ![](images/m3-img8.png)
 

@@ -45,7 +45,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
 ## Exercise 2: Explore Attack Paths in your Environment
 
-1. From **Defender for Cloud** menu, open the **Recommendations (1)** page.	You will find Attack path tab as below, click on **Attack path (2)**. You will find the Attack Paths in your Environment. 
+1. From **Defender for Cloud** menu, open the **Recommendations (1)** page. You will find Attack path tab as below, click on **Attack path (2)**. You will find the Attack Paths in your Environment. 
 
       ![](images/m1-img13.1.png)
 

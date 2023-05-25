@@ -15,7 +15,7 @@ Thanks to the combination of both reactive and proactive measures, Acme Inc was 
 Next exercise will show how to leverage the Attack Path feature of Defender for CSPM. 
 
 
-## Exercise 1: Enabling Defender CSPM plan
+## Exercise 1: Enabling Defender CSPM plan (Read Only)
 
 In this exercise, you will learn how to enable Defender for CSPM, and leverage Defender for CSPM Capabilities
 
@@ -43,7 +43,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
       ![](images/m1-img5.png)
 
-## Exercise 2: Explore Attack Paths in your Environment
+## Exercise 2: Explore Attack Paths in your Environment (Read Only)
 
 1. From **Defender for Cloud** menu, open the **Recommendations (1)** page. You will find Attack path tab as below, click on **Attack path (2)**. You will find the Attack Paths in your Environment. 
 
@@ -61,7 +61,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
 6. Explore the rest of the Attack paths found in your Environment and remidiate
 
-## Exercise 3: Build query with Cloud Security Explorer
+## Exercise 3: Build query with Cloud Security Explorer (Read Only)
 
 1. From **Defender for Cloud** menu, open the **Cloud Security Explorer** page.
 

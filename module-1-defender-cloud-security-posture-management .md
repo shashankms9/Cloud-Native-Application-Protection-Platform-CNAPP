@@ -51,15 +51,15 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
 2. Click on **Attack path**. You will find the Attack Paths in your Environment. 
 
-3. Click on **“Internet exposed VM has High severity vulnerabilities and read permission to key vault”**
+3. Click on **“Internet exposed VM has High severity vulnerabilities and read permission to key vault”**.
 
       ![](images/m1-img14.png)
  
 4. You can observe the Attack path and the resources involved in the attack path.
 
-5. Remediate the recommendations to resolve the attack path 
+5. Remediate the recommendations to resolve the attack path. 
 
-6. Explore the rest of the Attack paths found in your Environment and remidiate
+6. Explore the rest of the Attack paths found in your Environment and remediate.
 
 ## Exercise 3: Build query with Cloud Security Explorer (Read Only)
 
@@ -103,7 +103,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
       ![](images/m1-img16.png)
 
-  - Click on **+ (1)** next to **Azure storage accounts**, then from the **Select condition** drop-down menu click on **Netowrking (2)** and select **Exposed to the internet (3)** and click **Search** . 
+  - Click on **+ (1)** next to **Azure storage accounts**, then from the **Select condition** drop-down menu click on **Networking (2)** and select **Exposed to the internet (3)** and click **Search**. 
 
       ![](images/m1-img17.png)
 

@@ -5,7 +5,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 ### Exercise 1: Connecting your GitHub organization
 
-1. Navigate to github tab and go to repository **Settings (1)**, under **Actions (2)** select **General (3)** and set the **Workflow Permissions** to **Read and write permissions (4)** then click **Save (5)**.
+1. Navigate to GitHub tab and go to repository **Settings (1)**, under **Actions (2)** select **General (3)** and set the **Workflow Permissions** to **Read and write permissions (4)** then click **Save (5)**.
 
       ![](images/m4-img18.png)
 
@@ -17,7 +17,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
       ![](images/m4-img1.png)
 
-4. In **Create GitHub connection** page, enter the **Name** for the connector as `CNAPP-git` **(1)**, select your **Subscription (2)**, select **asclab (3)** **Resource Group** and select any **Region (4)**.	Click **Next:select plans > (5)** button to continue.
+4. In **Create GitHub connection** page, enter the **Name** for the connector as `CNAPP-git` **(1)**, select your **Subscription (2)**, select **asclab (3)** **Resource Group** and select any **Region (4)**.	Click **Next: select plans > (5)** button to continue.
 
       ![](images/m4-img2.png)
 
@@ -32,7 +32,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
       ![](images/m4-img5.png)
 
-7. Now click **Install** button under **Install Defender for DevOps app**. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask you confirmation of which repository you'd like to install the app. Select your **Github repository**. 
+7. Now click **Install** button under **Install Defender for DevOps app**. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask you confirmation of which repository you'd like to install the app. Select your **GitHub repository**. 
 
       ![](images/m4-img6.png)
   
@@ -121,7 +121,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
       ![](images/m4-img15.png)
 
-6. The process can take up to one minute to complete. A workflow gets created in your repositories github folder with the above copied yml file. Select **Actions** and wait for it to complete running. 
+6. The process can take up to one minute to complete. A workflow gets created in your repositories GitHub folder with the above copied yml file. Select **Actions** and wait for it to complete running. 
 
       ![](images/m4-img17.png)
 

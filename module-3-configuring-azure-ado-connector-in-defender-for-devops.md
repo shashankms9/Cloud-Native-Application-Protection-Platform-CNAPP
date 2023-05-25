@@ -38,7 +38,7 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
     ![](images/m3-img3.png)
 
-8. Click **Authorize** button. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask your permission to authorize. Scroll down the popped up window screen and click the **Accept** button as shown in the sample below:
+8. Click **Authorize** button. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask your permission to authorize. Scroll down the pop-up window screen and click the **Accept** button as shown in the sample below:
 
     ![](images/m3-img4.png)
 
@@ -46,7 +46,7 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
    > **Note**: When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
 
-9. After the authorization is complete, select your Azure ADO organization **odluserxxxx(1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
+9. After the authorization is complete, select your Azure ADO organization **odluserxxxx (1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
 
       ![](images/m3-img8.png)
 
@@ -126,7 +126,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img22.png)
 
-3. In the Create a virtual machine scale set page, select your **Subscription (1)**, select **asclab (2)** resource group, provide the **Virtual machine scale set name** as `build-agent` **(3)**, for **Region** select **<inject key="Resource group Location" enableCopy="false" /> (4)**, for **Orchestration mode** select **Uniform (5)** leave all other options as is and change the image to **Windows Server 2022 Datacenter: Azure Edition Core - x64 Gen2 (6)**.
+3. In the Create a virtual machine scale set page, select your **Subscription (1)**, select **asclab (2)** resource group, provide the **Virtual machine scale set name** as `build-agent` **(3)**, for **Region** select **<inject key="Resource group Location" enableCopy="false" /> (4)**, for **Orchestration mode** select **Uniform (5)** leave all other options as is and change the image to **Windows Server 2022 Datacentre: Azure Edition Core - x64 Gen2 (6)**.
 
      ![](images/m3-img50.png)
 
@@ -146,7 +146,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/editnic.png)
 
-7. Once you are back on the **Netowking** tab click **Review + Create**.
+7. Once you are back on the **Networking** tab click **Review + Create**.
 
      ![](images/m3-img55.png)
 
@@ -166,7 +166,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/addport.png)
 
-12. Enter `3389` **(1)** under **Destination port range**, and click **Add (2)**.
+12. Enter `3389` **(1)** under **Destination port range** and click **Add (2)**.
      
      ![](images/rdp.png)
 
@@ -182,7 +182,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/ip.png)
 
-16. Enter the following cerdentials and click **OK**.
+16. Enter the following credentials and click **OK**.
 
     - **Username**: `.\demouser` 
     - **Password**: `demo!pass123`
@@ -210,7 +210,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/cmd1.png)
 
-20. In the command promt, run the following npm command.
+20. In the command prompt, run the following npm command.
 
       ```
       npm.cmd install --loglevel error eslint@7.32.0 typescript@4.3.2 @microsoft/eslint-plugin-sdl@0.1.7 eslint-plugin-react@7.24.0 eslint-plugin-security@1.4.0 @typescript-eslint/typescript-estree@4.27.0 @typescript-eslint/parser@4.27.0 @typescript-eslint/eslint-plugin@4.27.0 @microsoft/eslint-formatter-sarif@2.1.5 eslint-plugin-node@11.1.0 --prefix C:\a\_msdo\packages\node_modules\eslint –global
@@ -243,7 +243,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img32.png)
 
-27. After the authorization is done, click on the virtual machine scale set drop down list and select **build-agent (1)**. Under the **Name** field, enter **windows-build-agents (2)**.
+27. After the authorization is done, click on the virtual machine scale set drop-down list and select **build-agent (1)**. Under the **Name** field, enter **windows-build-agents (2)**.
 
      ![](images/m3-img33.png)
 
@@ -251,11 +251,11 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/m3-img52.png)
 
-29. In the **Agent pools** page you can view newly created pool.
+29. In the **Agent pools** page, you can view newly created pool.
 
      ![](images/m3-img35.png)
 
-30. Navigate back to **Azure Portal**, on the **VMSS** page click on **Instances (1)** from the left menu, select both the **Build Agents (2)** and click **Upgade (3)**.
+30. Navigate back to **Azure Portal**, on the **VMSS** page click on **Instances (1)** from the left menu, select both the **Build Agents (2)** and click **Upgrade (3)**.
 
      ![](images/upgradeinst.png)
 
@@ -263,7 +263,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
 The purpose of this exercise is to allow you to see how the extension used by Defender for DevOps will check your pipeline.
 
-1.	Login to the GitHub using the URL on the **Labvm**, by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **Github credentials (2)**.
+1.	Login to the GitHub using the URL on the **Labvm**, by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **GitHub credentials (2)**.
 
       ```
       https://github.com/
@@ -299,7 +299,7 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
      ![](images/importrepo.png)
 
-8. On the **Import a Git repository** pane, for **Clone URL (1)** paste the **URL** you copied the the previous, then click **Import (2)**.
+8. On the **Import a Git repository** pane, for **Clone URL (1)** paste the **URL** you copied the previous, then click **Import (2)**.
 
      ![](images/gitimport.png)
 
@@ -311,7 +311,7 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
      ![](images/m3-img37.png)
 
-11. Click on the exisiting **Repository**.
+11. Click on the existing **Repository**.
 
      ![](images/m3-img38.png)
 
@@ -349,7 +349,7 @@ The purpose of this exercise is to allow you to see how the extension used by De
 
       ![](images/m3-img40.png)
 
-    > **Note**: At this point the job will queue up to run. This step may take some time to spin up a build agent in the VMSS. During this time, if you go back to VMSS dashboard you will see that the instance is getting created
+    > **Note**: At this point the job will queue up to run. This step may take some time to spin up a build agent in the VMSS. During this time, if you go back to VMSS dashboard you will see that the instance is getting created.
 
 14. In a few more minutes, the job will start to have some activity as shown the example below:
 

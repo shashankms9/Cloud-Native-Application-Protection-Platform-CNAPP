@@ -25,7 +25,7 @@ This exercise guides you on how to validate and use Defender for Containers.
 
    ![Open Powershell](images/open-powershell.png)
 
-6. Verify your docker version by executing in PowerShell 
+6. Verify your docker version by executing in PowerShell. 
 
    ```
    docker version
@@ -44,7 +44,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 
    ![Container registry in Azure](images/serach-cr.png)
 
-2. Open the Container Registry named **<inject key="Container registry" enableCopy="true"/>**.
+2. Open the Container Registry named **asclabcrxxxxxx**.
 
    ![Container registry open](images/select-cr.png)
 
@@ -66,7 +66,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
  
    ![ACR login](images/acr-login.png)
 
-6. Download vulnerable image from docker hub, by running the command below in Powershell:
+6. Download vulnerable image from docker hub, by running the command below in PowerShell:
 
    ```
    docker pull vulnerables/web-dvwa
@@ -82,7 +82,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 
    ![Docker images](images/docker-pull2.png)
 
-8. Create an alias of the image by runnig the following command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command:
+8. Create an alias of the image by running the following command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command:
 
    ```
    docker tag vulnerables/web-dvwa NameOfServer.azurecr.io/vulnerables/web-dvwa
@@ -97,7 +97,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
    ![Docker images](images/docker-image.png)
 
 
-10. Run docker push to upload the new image to the azure repository and generate image scan (it can take some time), using the below command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command: :
+10. Run docker push to upload the new image to the azure repository and generate image scan (it can take some time), using the below command and make sure to replace **NameOfServer** to **<inject key="Container registry" enableCopy="true"/>** and then run the below command:
 
     ```
     docker push NameOfServer.azurecr.io/vulnerables/web-dvwa
@@ -113,9 +113,9 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 
 ### Exercise 3: Investigate the recommendation for vulnerabilities in ACR
 
-Once a vulnerable image has been pushed to the Azure Container Registry registry, then Microsoft Defender for Containers will start scanning the image for vulnerabilities, by using Qualys. You will now look into the recommendation in Microsoft Defender for Cloud for this. 
+Once a vulnerable image has been pushed to the Azure Container Registry, then Microsoft Defender for Containers will start scanning the image for vulnerabilities, by using Qualys. You will now look into the recommendation in Microsoft Defender for Cloud for this. 
  
-1. In the Azure Portal, searh for Microsoft Defender **(1)** in the search box and then select **Microsoft Defender for Cloud** **(2)**.
+1. In the Azure Portal, search for Microsoft Defender **(1)** in the search box and then select **Microsoft Defender for Cloud** **(2)**.
 
     ![Microsoft Defender](images/m2-ex3-step1.png)
    

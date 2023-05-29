@@ -11,7 +11,9 @@
 
    ![](images/img-2.png "Lab Environment")
  
+1. Verify all the vm's are running. If not, please click on **Start** action button in the **Resources** tab.
 
+   ![](images/startresource.png "Lab Environment")
 
 ## Login to Azure Portal
 

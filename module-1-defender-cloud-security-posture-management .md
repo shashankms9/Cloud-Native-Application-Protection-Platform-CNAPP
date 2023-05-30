@@ -1,4 +1,4 @@
-# Module 1: Defender Cloud Security Posture Management 
+# Module 2: Defender Cloud Security Posture Management 
 
 ## Overview
  

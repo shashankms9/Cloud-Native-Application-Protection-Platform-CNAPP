@@ -263,13 +263,13 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
 The purpose of this exercise is to allow you to see how the extension used by Defender for DevOps will check your pipeline.
 
-1.	Login to the GitHub using the URL on the **Labvm**, by fetching the details from **Licenses (1)** tab under **Environment Details** page and copy the **GitHub credentials (2)**.
+1.	Login to the GitHub using the following URL on the **Labvm**, by fetching the details from **Environment Details (1)** page on the right tab, click on **Licenses (2)** tab and copy the **GitHub credentials (3)**.
 
       ```
       https://github.com/
       ```
 
-      ![](images/m4-img21.png)
+      ![](images/gitcred.png)
 
 2. For Device Verification Code, use the same credentials as in the previous step, open http://outlook.office.com/ in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 

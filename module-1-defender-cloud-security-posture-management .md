@@ -139,6 +139,10 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
     ![](images/m1-img22.png)
 
+6. On the **Rule created succsessfuly** pop-up select the check box next to **Apply rule to the existing recommendations that are unassigned** and click on **Ok**.
+
+    ![](images/a1.6.png)
+
 7. Click on **Governance report** to view the status of tasks **Complete, Ontime and Unassign**
 
     ![](images/m1-img23.png)

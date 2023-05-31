@@ -5,8 +5,13 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
 ### Exercise 1: Connecting your GitHub organization
 
-1. Navigate to GitHub tab.
+1. Navigate and login to the GitHub using the following URL on the **Labvm**, by fetching the details from **Environment Details (1)** page on the right tab, click on **Licenses (2)** tab and copy the **GitHub credentials (3)**.
 
+      ```
+      https://github.com/
+      ```
+
+      ![](images/gitcred.png)
 
 1. Go to repository **Settings (1)**, under **Actions (2)** select **General (3)** and set the **Workflow Permissions** to **Read and write permissions (4)** then click **Save (5)**.
 

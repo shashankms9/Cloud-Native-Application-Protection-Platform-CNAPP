@@ -80,7 +80,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 5. You will find the list of SQL servers with managed identity.
 
 
-6. You can also explore and build your own queries using query builder, from the dropdown select **Compute (1)** -> **Virtual machines (2)** -> **Azure Virtual Machines (3)** then click **Done (4)**.
+6. You can also explore and build your own queries using query builder. Clear the previous query by clicking **Clear All** and **Confirm**. Next, from the dropdown select **Compute (1) -> Virtual machines (2) -> Azure Virtual Machines (3)** then click **Done (4)**. Click Search to view VMs with this vulnerability.
 
       ![](images/m1-img9.png)
 
@@ -94,7 +94,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
       ![](images/m1-img11.png)
  
- - Search for Virtual Machines that has a specific Vulnerability.
+ - Search for Virtual Machines that have a specific Vulnerability of **CVE-2021-44228** or **CVE-2021-45046**.
  
       
       ![](images/m1-img15.png)
@@ -139,8 +139,11 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
     ![](images/m1-img22.png)
 
+6. On the **Rule created succsessfuly** pop-up select the check box next to **Apply rule to the existing recommendations that are unassigned** and click on **Ok**.
 
-6. Click on **Governance report** to view the status of tasks **Complete, Ontime and Unassign**
+    ![](images/a1.6.png)
+
+7. Click on **Governance report** to view the status of tasks **Complete, Ontime and Unassign**
 
     ![](images/m1-img23.png)
     

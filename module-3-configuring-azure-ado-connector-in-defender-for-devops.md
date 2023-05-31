@@ -6,11 +6,12 @@ In this exercise, you will learn how to configure Azure ADO Connector in Defende
 
 
 ### Exercise 1: Configuring Azure ADO Connector
+In this exercise you will create a new Azure DevOps organization.
 
 1. Navigate to [Azure DevOps](https://dev.azure.com) and login using the following credentials:
 
-    * Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
-    * Password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
+    * Email: Enter **the Azure Username from the email you received when registering**. 
+    * Password: Enter **the Azure Password from the email you received when registering**.
 
 2. Click on **Organization settings**. 
 
@@ -246,6 +247,7 @@ In order to view the scan results (when you execute the pipelines), in an easier
 27. After the authorization is done, click on the virtual machine scale set drop-down list and select **build-agent (1)**. Under the **Name** field, enter **windows-build-agents (2)**.
 
      ![](images/m3-img33.png)
+     >**Note: You may get an error about client not allowed, click button with circle (refresh) to fix**.
 
 28. Enter `1` under **Maximum number of virtual machines in the scale set (1)** and **Number of agents to keep on standby (2)** fields then check the box next to **Grant access permission to all pipelines (3)** and click **Create (4)**.
 

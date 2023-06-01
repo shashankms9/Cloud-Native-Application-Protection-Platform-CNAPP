@@ -143,8 +143,8 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 >  
 >   - You can create a **Personal access token**, by navigating to the user **Settings** and click on **Developer settings** option. Now select **Personal Access Token (1)**, from the drop-down click on **Tokens (classic) (2)** then select **Generate new token (3)** and click on **Generate new token (classic) (4)**. 
 >   
->           ![](images/pat1.png)
+>       ![](images/pat1.png)
 >
 >   - Enter any name for your PAT in the **Note**, then select the options provided in the screenshot below and click on **Generate Token**. Once the token is generated make sure to **Copy** it and paste it on any text editor such as a notepad. 
 >  
->           ![](images/pat2.png)
+>       ![](images/pat2.png)

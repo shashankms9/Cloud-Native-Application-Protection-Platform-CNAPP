@@ -1,9 +1,7 @@
 # Module 4:  Configuring Azure ADO Connector in Defender for DevOps
 
-
 ## Objectives
 In this exercise, you will learn how to configure Azure ADO Connector in Defender for DevOps.
-
 
 ### Exercise 1: Configuring Azure ADO Connector
 In this exercise you will create a new Azure DevOps organization.
@@ -23,7 +21,7 @@ In this exercise you will create a new Azure DevOps organization.
 
     ![](images/m3-img47.png)
 
-4. Click on **Azure Devops (1)** to navigate back to the home page. In the **Create a project to get started** pane, enter the **Project name** as **ODL_User_odluser_<inject key="Deployment ID" enableCopy="false"/> (2)** set **Visibility** to **Public (3)** and click **+ Create project (4)**. 
+4. Click on **Azure Devops (1)** to navigate back to the home page. In the **Create a project to get started** pane, enter the **Project name** as **ODL_User_<inject key="Deployment ID" enableCopy="false"/> (2)** set **Visibility** to **Public (3)** and click **+ Create project (4)**. 
 
     ![](images/m3-img48.png)
 

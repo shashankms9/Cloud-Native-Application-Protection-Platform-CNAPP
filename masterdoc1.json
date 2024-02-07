@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "CNAPP Workshop",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/main/GettingStarted.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/main/module-1-defender-cloud-security-posture-management%20.md",
+        "Order": 2
+      }
+    ]
+  }
+]

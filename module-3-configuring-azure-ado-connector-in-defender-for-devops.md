@@ -1,4 +1,4 @@
-# Module 4:  Configuring Azure ADO Connector in Defender for DevOps
+# Module 2:  Configuring Azure ADO Connector in Defender for DevOps
 
 ## Objectives
 In this exercise, you will learn how to configure Azure ADO Connector in Defender for DevOps.

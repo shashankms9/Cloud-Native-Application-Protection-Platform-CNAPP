@@ -8,8 +8,8 @@ In this exercise you will create a new Azure DevOps organization.
 
 1. Navigate to [Azure DevOps](https://dev.azure.com) and login using the following credentials:
 
-    * Email: Enter **the Azure Username from the email you received when registering**. 
-    * Password: Enter **the Azure Password from the email you received when registering**.
+    * Email:  **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
+    * Password:  **<inject key="AzureAdUserPassword" enableCopy="true"/>**
 
 2. Click on **Organization settings**. 
 

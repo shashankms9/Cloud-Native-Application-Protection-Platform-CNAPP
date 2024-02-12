@@ -1,4 +1,4 @@
-# Module 3:   Defender for Containers
+# Module 2:   Defender for Containers
 
 ## Objectives
 This exercise guides you on how to validate and use Defender for Containers.

@@ -4,11 +4,11 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/main/GettingStarted.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/guided-labs/GettingStarted.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/main/module-4-integrating-defender-for-devops-with-ghas.md",
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Cloud-Native-Application-Protection-Platform-CNAPP/guided-labs/module-4-integrating-defender-for-devops-with-ghas.md",
         "Order": 2
       }
     ]
